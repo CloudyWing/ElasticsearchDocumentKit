@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Indexing
+  id: CloudyWing.ElasticsearchDocumentKit.Indexing
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer`1
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  langs:
+  - csharp
+  - vb
+  name: CloudyWing.ElasticsearchDocumentKit.Indexing
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Indexing
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing
+  type: Namespace
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.html
+  name: AliasSwitchResult
+  nameWithType: AliasSwitchResult
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher.html
+  name: ElasticsearchAliasSwitcher
+  nameWithType: ElasticsearchAliasSwitcher
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer`1
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer-1.html
+  name: ElasticsearchIndexInitializer<TDocument>
+  nameWithType: ElasticsearchIndexInitializer<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer<TDocument>
+  nameWithType.vb: ElasticsearchIndexInitializer(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer(Of TDocument)
+  name.vb: ElasticsearchIndexInitializer(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer`1
+    name: ElasticsearchIndexInitializer
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer`1
+    name: ElasticsearchIndexInitializer
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.html
+  name: IElasticsearchAliasSwitcher
+  nameWithType: IElasticsearchAliasSwitcher
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer-1.html
+  name: IIndexInitializer<TDocument>
+  nameWithType: IIndexInitializer<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer<TDocument>
+  nameWithType.vb: IIndexInitializer(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer(Of TDocument)
+  name.vb: IIndexInitializer(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+    name: IIndexInitializer
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+    name: IIndexInitializer
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.html
+  name: IndexInitializationResult
+  nameWithType: IndexInitializationResult
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.html
+  name: IndexLifecycleNames
+  nameWithType: IndexLifecycleNames
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Indexing
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Indexing
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Indexing
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html

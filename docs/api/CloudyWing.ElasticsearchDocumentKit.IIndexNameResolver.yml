@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  id: IIndexNameResolver
+  parent: CloudyWing.ElasticsearchDocumentKit
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve(System.Type)
+  - CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve``1
+  langs:
+  - csharp
+  - vb
+  name: IIndexNameResolver
+  nameWithType: IIndexNameResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  type: Interface
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IIndexNameResolver.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IIndexNameResolver
+    path: ../src/ElasticsearchDocumentKit/IIndexNameResolver.cs
+    startLine: 5
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 解析文件型別對應的 Elasticsearch index 名稱。
+  example: []
+  syntax:
+    content: public interface IIndexNameResolver
+    content.vb: Public Interface IIndexNameResolver
+- uid: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve``1
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve``1
+  id: Resolve``1
+  parent: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  langs:
+  - csharp
+  - vb
+  name: Resolve<TDocument>()
+  nameWithType: IIndexNameResolver.Resolve<TDocument>()
+  fullName: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve<TDocument>()
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IIndexNameResolver.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Resolve
+    path: ../src/ElasticsearchDocumentKit/IIndexNameResolver.cs
+    startLine: 11
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 解析指定文件型別的 index 名稱。
+  example: []
+  syntax:
+    content: string Resolve<TDocument>()
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    return:
+      type: System.String
+      description: Elasticsearch index 名稱。
+    content.vb: Function Resolve(Of TDocument)() As String
+  overload: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve*
+  nameWithType.vb: IIndexNameResolver.Resolve(Of TDocument)()
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve(Of TDocument)()
+  name.vb: Resolve(Of TDocument)()
+- uid: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve(System.Type)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve(System.Type)
+  id: Resolve(System.Type)
+  parent: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  langs:
+  - csharp
+  - vb
+  name: Resolve(Type)
+  nameWithType: IIndexNameResolver.Resolve(Type)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IIndexNameResolver.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Resolve
+    path: ../src/ElasticsearchDocumentKit/IIndexNameResolver.cs
+    startLine: 19
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 解析指定文件型別的 index 名稱。
+  example: []
+  syntax:
+    content: string Resolve(Type documentType)
+    parameters:
+    - id: documentType
+      type: System.Type
+      description: 文件型別。
+    return:
+      type: System.String
+      description: Elasticsearch index 名稱。
+    content.vb: Function Resolve(documentType As Type) As String
+  overload: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">documentType</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+- uid: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve
+  href: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.html#CloudyWing_ElasticsearchDocumentKit_IIndexNameResolver_Resolve__1
+  name: Resolve
+  nameWithType: IIndexNameResolver.Resolve
+  fullName: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

@@ -1,0 +1,20 @@
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  docs:
+    uses: CloudyWing/devops-templates/.github/workflows/reusable-docfx-publish.yml@v1
+    with:
+      docfx-config: "docs/docfx.json"
+      site-dir: "_site"
+      dotnet-version: "10.0.x"
+      docfx-version: "2.78.4"

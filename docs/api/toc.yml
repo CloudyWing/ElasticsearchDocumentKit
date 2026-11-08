@@ -1,0 +1,159 @@
+### YamlMime:TableOfContent
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit
+  name: CloudyWing.ElasticsearchDocumentKit
+  type: Namespace
+  items:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+    name: BulkDeadLetter<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+    name: BulkIndexOptions<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure
+    name: BulkOperationFailure
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+    name: BulkOperationResult
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult
+    name: ByQueryOperationResult
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver
+    name: DefaultIndexNameResolver
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+    name: DeleteByQueryRequest<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+    name: DocumentCountResult
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+    name: DocumentGetResult<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+    name: DocumentOperationResult
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+    name: DocumentWriteOptions
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore`1
+    name: ElasticsearchDocumentStore<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+    name: ElasticsearchDocumentsOptions
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions
+    name: ElasticsearchDocumentsServiceCollectionExtensions
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+    name: ElasticsearchDocumentsTelemetry
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute
+    name: ElasticsearchIndexNameAttribute
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator
+    name: ElasticsearchIndexNameValidator
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+    name: IElasticsearchDocumentStore<TDocument>
+    type: Interface
+  - uid: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+    name: IIndexNameResolver
+    type: Interface
+  - uid: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+    name: IndexDocumentOptions
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+    name: UpdateByQueryRequest<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+    name: UpdateDocumentOptions
+    type: Class
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo
+  name: CloudyWing.ElasticsearchDocumentKit.Geo
+  type: Namespace
+  items:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+    name: GeoPoint
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+    name: GeoPolygon
+    type: Class
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+  name: CloudyWing.ElasticsearchDocumentKit.Indexing
+  type: Namespace
+  items:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+    name: AliasSwitchResult
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher
+    name: ElasticsearchAliasSwitcher
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer`1
+    name: ElasticsearchIndexInitializer<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+    name: IElasticsearchAliasSwitcher
+    type: Interface
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+    name: IIndexInitializer<TDocument>
+    type: Interface
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+    name: IndexInitializationResult
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+    name: IndexLifecycleNames
+    type: Class
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+  name: CloudyWing.ElasticsearchDocumentKit.Modeling
+  type: Namespace
+  items:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+    name: DefaultElasticsearchDocumentModelResolver
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder
+    name: ElasticsearchDocumentModelBuilder
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder`1
+    name: ElasticsearchDocumentModelBuilder<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+    name: ElasticsearchDocumentModel<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+    name: IElasticsearchDocumentModelResolver
+    type: Interface
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying
+  name: CloudyWing.ElasticsearchDocumentKit.Querying
+  type: Namespace
+  items:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+    name: ElasticsearchSearchRequestDescriptorExtensions
+    type: Class
+- uid: CloudyWing.ElasticsearchDocumentKit.Search
+  name: CloudyWing.ElasticsearchDocumentKit.Search
+  type: Namespace
+  items:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+    name: DocumentPageRequest<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+    name: DocumentPageResult<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+    name: DocumentSearchRequest<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+    name: DocumentSearchResult<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+    name: SearchAfterPage<TDocument>
+    type: Class
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest<TDocument>
+    type: Class
+memberLayout: SamePage

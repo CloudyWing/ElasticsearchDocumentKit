@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  id: DeleteByQueryRequest`1
+  parent: CloudyWing.ElasticsearchDocumentKit
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  - CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  - CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Refresh
+  langs:
+  - csharp
+  - vb
+  name: DeleteByQueryRequest<TDocument>
+  nameWithType: DeleteByQueryRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DeleteByQueryRequest
+    path: ../src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+    startLine: 13
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 表示 delete-by-query 的設定。
+  remarks: >-
+    <xref href="CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest%601.Filters" data-throw-if-not-resolved="false"></xref> 沒有任何條件時，必須透過 <xref href="CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest%601.ConfigureRequest" data-throw-if-not-resolved="false"></xref> 明確指定 query
+
+    （例如 <code>match_all</code>），否則會因為可能誤刪整個 index 的文件而被拒絕。
+  example: []
+  syntax:
+    content: 'public sealed class DeleteByQueryRequest<TDocument> where TDocument : class'
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    content.vb: Public NotInheritable Class DeleteByQueryRequest(Of TDocument As Class)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument)
+  name.vb: DeleteByQueryRequest(Of TDocument)
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  id: Filters
+  parent: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  langs:
+  - csharp
+  - vb
+  name: Filters
+  nameWithType: DeleteByQueryRequest<TDocument>.Filters
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.Filters
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Filters
+    path: ../src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+    startLine: 19
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定篩選條件。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument>? Filters { get; init; }
+    parameters: []
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{{TDocument}}
+      description: 條件會組成 bool filter query。
+    content.vb: Public Property Filters As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters*
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).Filters
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).Filters
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Refresh
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Refresh
+  id: Refresh
+  parent: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  langs:
+  - csharp
+  - vb
+  name: Refresh
+  nameWithType: DeleteByQueryRequest<TDocument>.Refresh
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.Refresh
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Refresh
+    path: ../src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+    startLine: 25
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定一個值，用以指出完成後是否 refresh 受影響的 index。
+  example: []
+  syntax:
+    content: public bool Refresh { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 若要 refresh，則為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；否則為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。預設為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>。
+    content.vb: Public Property Refresh As Boolean
+  overload: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Refresh*
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).Refresh
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).Refresh
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  id: ConfigureRequest
+  parent: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigureRequest
+  nameWithType: DeleteByQueryRequest<TDocument>.ConfigureRequest
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.ConfigureRequest
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ConfigureRequest
+    path: ../src/ElasticsearchDocumentKit/DeleteByQueryRequest.cs
+    startLine: 31
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定官方 request descriptor 設定動作。
+  example: []
+  syntax:
+    content: public Action<DeleteByQueryRequestDescriptor<TDocument>>? ConfigureRequest { get; init; }
+    parameters: []
+    return:
+      type: System.Action{Elastic.Clients.Elasticsearch.DeleteByQueryRequestDescriptor{{TDocument}}}
+      description: 於套件自身的設定之後執行，可覆寫前面的設定，例如指定 <code>conflicts=proceed</code>。
+    content.vb: Public Property ConfigureRequest As Action(Of DeleteByQueryRequestDescriptor(Of TDocument))
+  overload: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest*
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).ConfigureRequest
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).ConfigureRequest
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest_1_Filters
+  name: Filters
+  nameWithType: DeleteByQueryRequest<TDocument>.Filters
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.Filters
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).Filters
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).Filters
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest_1_ConfigureRequest
+  name: ConfigureRequest
+  nameWithType: DeleteByQueryRequest<TDocument>.ConfigureRequest
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.ConfigureRequest
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).ConfigureRequest
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).ConfigureRequest
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest_1_Filters
+  name: Filters
+  nameWithType: DeleteByQueryRequest<TDocument>.Filters
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.Filters
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).Filters
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).Filters
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying
+  definition: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  name: ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)
+  name.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  name: ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)
+  name.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Querying
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Querying
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Querying
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Refresh*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Refresh
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest_1_Refresh
+  name: Refresh
+  nameWithType: DeleteByQueryRequest<TDocument>.Refresh
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.Refresh
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).Refresh
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).Refresh
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest_1_ConfigureRequest
+  name: ConfigureRequest
+  nameWithType: DeleteByQueryRequest<TDocument>.ConfigureRequest
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.ConfigureRequest
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).ConfigureRequest
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).ConfigureRequest
+- uid: System.Action{Elastic.Clients.Elasticsearch.DeleteByQueryRequestDescriptor{{TDocument}}}
+  commentId: T:System.Action{Elastic.Clients.Elasticsearch.DeleteByQueryRequestDescriptor{`0}}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<DeleteByQueryRequestDescriptor<TDocument>>
+  nameWithType: Action<DeleteByQueryRequestDescriptor<TDocument>>
+  fullName: System.Action<Elastic.Clients.Elasticsearch.DeleteByQueryRequestDescriptor<TDocument>>
+  nameWithType.vb: Action(Of DeleteByQueryRequestDescriptor(Of TDocument))
+  fullName.vb: System.Action(Of Elastic.Clients.Elasticsearch.DeleteByQueryRequestDescriptor(Of TDocument))
+  name.vb: Action(Of DeleteByQueryRequestDescriptor(Of TDocument))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Elastic.Clients.Elasticsearch.DeleteByQueryRequestDescriptor`1
+    name: DeleteByQueryRequestDescriptor
+    isExternal: true
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Elastic.Clients.Elasticsearch.DeleteByQueryRequestDescriptor`1
+    name: DeleteByQueryRequestDescriptor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

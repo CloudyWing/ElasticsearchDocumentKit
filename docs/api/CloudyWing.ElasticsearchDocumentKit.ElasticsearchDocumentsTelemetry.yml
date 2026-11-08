@@ -1,0 +1,414 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  id: ElasticsearchDocumentsTelemetry
+  parent: CloudyWing.ElasticsearchDocumentKit
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySourceName
+  langs:
+  - csharp
+  - vb
+  name: ElasticsearchDocumentsTelemetry
+  nameWithType: ElasticsearchDocumentsTelemetry
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/ElasticsearchDocumentsTelemetry.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ElasticsearchDocumentsTelemetry
+    path: ../src/ElasticsearchDocumentKit/ElasticsearchDocumentsTelemetry.cs
+    startLine: 7
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 提供 Elasticsearch documents 工具庫 OpenTelemetry instrumentation 使用的 ActivitySource。
+  example: []
+  syntax:
+    content: public static class ElasticsearchDocumentsTelemetry
+    content.vb: Public Module ElasticsearchDocumentsTelemetry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySourceName
+  commentId: F:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySourceName
+  id: ActivitySourceName
+  parent: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  langs:
+  - csharp
+  - vb
+  name: ActivitySourceName
+  nameWithType: ElasticsearchDocumentsTelemetry.ActivitySourceName
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySourceName
+  type: Field
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/ElasticsearchDocumentsTelemetry.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ActivitySourceName
+    path: ../src/ElasticsearchDocumentKit/ElasticsearchDocumentsTelemetry.cs
+    startLine: 11
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得 ActivitySource 名稱。
+  example: []
+  syntax:
+    content: public const string ActivitySourceName = "CloudyWing.ElasticsearchDocumentKit"
+    return:
+      type: System.String
+    content.vb: Public Const ActivitySourceName As String = "CloudyWing.ElasticsearchDocumentKit"
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource
+  id: ActivitySource
+  parent: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  langs:
+  - csharp
+  - vb
+  name: ActivitySource
+  nameWithType: ElasticsearchDocumentsTelemetry.ActivitySource
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/ElasticsearchDocumentsTelemetry.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ActivitySource
+    path: ../src/ElasticsearchDocumentKit/ElasticsearchDocumentsTelemetry.cs
+    startLine: 16
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得 ActivitySource 執行個體。
+  example: []
+  syntax:
+    content: public static ActivitySource ActivitySource { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivitySource
+    content.vb: Public Shared ReadOnly Property ActivitySource As ActivitySource
+  overload: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource*
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.html#CloudyWing_ElasticsearchDocumentKit_ElasticsearchDocumentsTelemetry_ActivitySource
+  name: ActivitySource
+  nameWithType: ElasticsearchDocumentsTelemetry.ActivitySource
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource
+- uid: System.Diagnostics.ActivitySource
+  commentId: T:System.Diagnostics.ActivitySource
+  parent: System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.activitysource
+  name: ActivitySource
+  nameWithType: ActivitySource
+  fullName: System.Diagnostics.ActivitySource
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics

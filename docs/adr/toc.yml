@@ -1,0 +1,6 @@
+- name: 架構決策紀錄索引
+  href: index.md
+- name: ADR-0001 公開面以 PublicAPI 文字檔宣告
+  href: 0001-public-api-declaration-as-build-error.md
+- name: ADR-0002 發佈步驟以 composite action 呼叫
+  href: 0002-nuget-publish-via-composite-action.md

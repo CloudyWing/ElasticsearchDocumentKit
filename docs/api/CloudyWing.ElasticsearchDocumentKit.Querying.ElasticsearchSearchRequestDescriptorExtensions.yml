@@ -1,0 +1,739 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+  id: ElasticsearchSearchRequestDescriptorExtensions
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{``0}})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  langs:
+  - csharp
+  - vb
+  name: ElasticsearchSearchRequestDescriptorExtensions
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ElasticsearchSearchRequestDescriptorExtensions
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+    startLine: 10
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 提供常見 search descriptor 設定的擴充方法。
+  example: []
+  syntax:
+    content: public static class ElasticsearchSearchRequestDescriptorExtensions
+    content.vb: Public Module ElasticsearchSearchRequestDescriptorExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{``0}})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{``0}})
+  id: QueryFilters``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{``0}})
+  isExtensionMethod: true
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+  langs:
+  - csharp
+  - vb
+  name: QueryFilters<TDocument>(SearchRequestDescriptor<TDocument>, Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.QueryFilters<TDocument>(SearchRequestDescriptor<TDocument>, Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters<TDocument>(Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument>, System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>>)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: QueryFilters
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+    startLine: 19
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 使用直觀的 filter builder 設定 bool filter query。
+  example: []
+  syntax:
+    content: 'public static SearchRequestDescriptor<TDocument> QueryFilters<TDocument>(this SearchRequestDescriptor<TDocument> descriptor, Action<ElasticsearchQueryFilterBuilder<TDocument>> configure) where TDocument : class'
+    parameters:
+    - id: descriptor
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    - id: configure
+      type: System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{{TDocument}}}
+      description: filter builder 設定動作。
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    return:
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    content.vb: Public Shared Function QueryFilters(Of TDocument As Class)(descriptor As SearchRequestDescriptor(Of TDocument), configure As Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))) As SearchRequestDescriptor(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">configure</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchSearchRequestDescriptorExtensions.QueryFilters(Of TDocument)(SearchRequestDescriptor(Of TDocument), Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters(Of TDocument)(Elastic.Clients.Elasticsearch.SearchRequestDescriptor(Of TDocument), System.Action(Of CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)))
+  name.vb: QueryFilters(Of TDocument)(SearchRequestDescriptor(Of TDocument), Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  id: SourceIncludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  isExtensionMethod: true
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+  langs:
+  - csharp
+  - vb
+  name: SourceIncludes<TDocument>(SearchRequestDescriptor<TDocument>, params Expression<Func<TDocument, object?>>[])
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes<TDocument>(SearchRequestDescriptor<TDocument>, params Expression<Func<TDocument, object?>>[])
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes<TDocument>(Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument>, params System.Linq.Expressions.Expression<System.Func<TDocument, object?>>[])
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SourceIncludes
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+    startLine: 45
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 限制回傳的 <code>_source</code> 欄位。
+  example: []
+  syntax:
+    content: 'public static SearchRequestDescriptor<TDocument> SourceIncludes<TDocument>(this SearchRequestDescriptor<TDocument> descriptor, params Expression<Func<TDocument, object?>>[] fields) where TDocument : class'
+    parameters:
+    - id: descriptor
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    - id: fields
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}[]
+      description: 要包含的欄位；未提供欄位時不改變 descriptor。
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    return:
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    content.vb: Public Shared Function SourceIncludes(Of TDocument As Class)(descriptor As SearchRequestDescriptor(Of TDocument), ParamArray fields As Expression(Of Func(Of TDocument, Object))()) As SearchRequestDescriptor(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">fields</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes(Of TDocument)(SearchRequestDescriptor(Of TDocument), ParamArray Expression(Of Func(Of TDocument, Object))())
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes(Of TDocument)(Elastic.Clients.Elasticsearch.SearchRequestDescriptor(Of TDocument), ParamArray System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object))())
+  name.vb: SourceIncludes(Of TDocument)(SearchRequestDescriptor(Of TDocument), ParamArray Expression(Of Func(Of TDocument, Object))())
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  id: SourceExcludes``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])
+  isExtensionMethod: true
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+  langs:
+  - csharp
+  - vb
+  name: SourceExcludes<TDocument>(SearchRequestDescriptor<TDocument>, params Expression<Func<TDocument, object?>>[])
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes<TDocument>(SearchRequestDescriptor<TDocument>, params Expression<Func<TDocument, object?>>[])
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes<TDocument>(Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument>, params System.Linq.Expressions.Expression<System.Func<TDocument, object?>>[])
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SourceExcludes
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+    startLine: 67
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 排除指定的 <code>_source</code> 欄位。
+  example: []
+  syntax:
+    content: 'public static SearchRequestDescriptor<TDocument> SourceExcludes<TDocument>(this SearchRequestDescriptor<TDocument> descriptor, params Expression<Func<TDocument, object?>>[] fields) where TDocument : class'
+    parameters:
+    - id: descriptor
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    - id: fields
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}[]
+      description: 要排除的欄位。
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    return:
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    content.vb: Public Shared Function SourceExcludes(Of TDocument As Class)(descriptor As SearchRequestDescriptor(Of TDocument), ParamArray fields As Expression(Of Func(Of TDocument, Object))()) As SearchRequestDescriptor(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">fields</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes(Of TDocument)(SearchRequestDescriptor(Of TDocument), ParamArray Expression(Of Func(Of TDocument, Object))())
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes(Of TDocument)(Elastic.Clients.Elasticsearch.SearchRequestDescriptor(Of TDocument), ParamArray System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object))())
+  name.vb: SourceExcludes(Of TDocument)(SearchRequestDescriptor(Of TDocument), ParamArray Expression(Of Func(Of TDocument, Object))())
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0})
+  id: DisableSource``1(Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0})
+  isExtensionMethod: true
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+  langs:
+  - csharp
+  - vb
+  name: DisableSource<TDocument>(SearchRequestDescriptor<TDocument>)
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.DisableSource<TDocument>(SearchRequestDescriptor<TDocument>)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource<TDocument>(Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument>)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DisableSource
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchSearchRequestDescriptorExtensions.cs
+    startLine: 87
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 關閉 <code>_source</code> 回傳。
+  example: []
+  syntax:
+    content: 'public static SearchRequestDescriptor<TDocument> DisableSource<TDocument>(this SearchRequestDescriptor<TDocument> descriptor) where TDocument : class'
+    parameters:
+    - id: descriptor
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    return:
+      type: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+      description: search request descriptor。
+    content.vb: Public Shared Function DisableSource(Of TDocument As Class)(descriptor As SearchRequestDescriptor(Of TDocument)) As SearchRequestDescriptor(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource*
+  nameWithType.vb: ElasticsearchSearchRequestDescriptorExtensions.DisableSource(Of TDocument)(SearchRequestDescriptor(Of TDocument))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource(Of TDocument)(Elastic.Clients.Elasticsearch.SearchRequestDescriptor(Of TDocument))
+  name.vb: DisableSource(Of TDocument)(SearchRequestDescriptor(Of TDocument))
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Querying
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Querying
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Querying
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchSearchRequestDescriptorExtensions_QueryFilters__1_Elastic_Clients_Elasticsearch_SearchRequestDescriptor___0__System_Action_CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder___0___
+  name: QueryFilters
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.QueryFilters
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters
+- uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}
+  commentId: T:Elastic.Clients.Elasticsearch.SearchRequestDescriptor{``0}
+  parent: Elastic.Clients.Elasticsearch
+  definition: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+  name: SearchRequestDescriptor<TDocument>
+  nameWithType: SearchRequestDescriptor<TDocument>
+  fullName: Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument>
+  nameWithType.vb: SearchRequestDescriptor(Of TDocument)
+  fullName.vb: Elastic.Clients.Elasticsearch.SearchRequestDescriptor(Of TDocument)
+  name.vb: SearchRequestDescriptor(Of TDocument)
+  spec.csharp:
+  - uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+    name: SearchRequestDescriptor
+    isExternal: true
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+    name: SearchRequestDescriptor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{{TDocument}}}
+  commentId: T:System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{``0}}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ElasticsearchQueryFilterBuilder<TDocument>>
+  nameWithType: Action<ElasticsearchQueryFilterBuilder<TDocument>>
+  fullName: System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>>
+  nameWithType.vb: Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))
+  fullName.vb: System.Action(Of CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument))
+  name.vb: Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+  commentId: T:Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+  isExternal: true
+  name: SearchRequestDescriptor<TDocument>
+  nameWithType: SearchRequestDescriptor<TDocument>
+  fullName: Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument>
+  nameWithType.vb: SearchRequestDescriptor(Of TDocument)
+  fullName.vb: Elastic.Clients.Elasticsearch.SearchRequestDescriptor(Of TDocument)
+  name.vb: SearchRequestDescriptor(Of TDocument)
+  spec.csharp:
+  - uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+    name: SearchRequestDescriptor
+    isExternal: true
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+    name: SearchRequestDescriptor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: Elastic.Clients.Elasticsearch
+  commentId: N:Elastic.Clients.Elasticsearch
+  isExternal: true
+  name: Elastic.Clients.Elasticsearch
+  nameWithType: Elastic.Clients.Elasticsearch
+  fullName: Elastic.Clients.Elasticsearch
+  spec.csharp:
+  - uid: Elastic
+    name: Elastic
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients
+    name: Clients
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients.Elasticsearch
+    name: Elasticsearch
+    isExternal: true
+  spec.vb:
+  - uid: Elastic
+    name: Elastic
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients
+    name: Clients
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients.Elasticsearch
+    name: Elasticsearch
+    isExternal: true
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchSearchRequestDescriptorExtensions_SourceIncludes__1_Elastic_Clients_Elasticsearch_SearchRequestDescriptor___0__System_Linq_Expressions_Expression_System_Func___0_System_Object_____
+  name: SourceIncludes
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes
+- uid: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TDocument, object>>[]
+  nameWithType: Expression<Func<TDocument, object>>[]
+  fullName: System.Linq.Expressions.Expression<System.Func<TDocument, object>>[]
+  nameWithType.vb: Expression(Of Func(Of TDocument, Object))()
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object))()
+  name.vb: Expression(Of Func(Of TDocument, Object))()
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TDocument
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: (
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchSearchRequestDescriptorExtensions_SourceExcludes__1_Elastic_Clients_Elasticsearch_SearchRequestDescriptor___0__System_Linq_Expressions_Expression_System_Func___0_System_Object_____
+  name: SourceExcludes
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchSearchRequestDescriptorExtensions_DisableSource__1_Elastic_Clients_Elasticsearch_SearchRequestDescriptor___0__
+  name: DisableSource
+  nameWithType: ElasticsearchSearchRequestDescriptorExtensions.DisableSource
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource

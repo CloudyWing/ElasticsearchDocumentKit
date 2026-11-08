@@ -1,0 +1,87 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    if: github.event_name == 'push'
+    uses: CloudyWing/devops-templates/.github/workflows/reusable-dotnet-ci.yml@v1
+    with:
+      solution: ElasticsearchDocumentKit.slnx
+      warnaserror: true
+      test-args: --filter TestCategory!=Integration
+
+  create-release:
+    needs: verify
+    permissions:
+      contents: write
+    uses: CloudyWing/devops-templates/.github/workflows/reusable-create-release.yml@v1
+    with:
+      changelog-path: "CHANGELOG.md"
+
+  # publish-nuget 與 probe 以 composite action 執行發佈步驟，不使用 reusable
+  # workflow。nuget.org 的 Trusted Publishing 驗證 OIDC token 的
+  # job_workflow_ref claim，要求前綴為 CloudyWing/ElasticsearchDocumentKit/.github/workflows/。
+  # reusable workflow 會使該 claim 指向 devops-templates 而驗證失敗。
+  publish-nuget:
+    needs: create-release
+    runs-on: windows-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DOTNET_NOLOGO: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Pack and publish
+        uses: CloudyWing/devops-templates/.github/actions/nuget-publish@v1
+        with:
+          nuget-user: CloudyWing
+          expected-version: ${{ github.ref_name }}
+
+  probe:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: windows-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DOTNET_NOLOGO: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Verify Trusted Publishing binding
+        uses: CloudyWing/devops-templates/.github/actions/nuget-publish@v1
+        with:
+          nuget-user: CloudyWing
+          dry-run: 'true'

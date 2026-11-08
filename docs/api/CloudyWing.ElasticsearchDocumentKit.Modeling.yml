@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Modeling
+  id: CloudyWing.ElasticsearchDocumentKit.Modeling
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder`1
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+  langs:
+  - csharp
+  - vb
+  name: CloudyWing.ElasticsearchDocumentKit.Modeling
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Modeling
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling
+  type: Namespace
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.html
+  name: DefaultElasticsearchDocumentModelResolver
+  nameWithType: DefaultElasticsearchDocumentModelResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  name: ElasticsearchDocumentModel<TDocument>
+  nameWithType: ElasticsearchDocumentModel<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>
+  nameWithType.vb: ElasticsearchDocumentModel(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel(Of TDocument)
+  name.vb: ElasticsearchDocumentModel(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+    name: ElasticsearchDocumentModel
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+    name: ElasticsearchDocumentModel
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder.html
+  name: ElasticsearchDocumentModelBuilder
+  nameWithType: ElasticsearchDocumentModelBuilder
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder`1
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder-1.html
+  name: ElasticsearchDocumentModelBuilder<TDocument>
+  nameWithType: ElasticsearchDocumentModelBuilder<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument>
+  nameWithType.vb: ElasticsearchDocumentModelBuilder(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder(Of TDocument)
+  name.vb: ElasticsearchDocumentModelBuilder(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder`1
+    name: ElasticsearchDocumentModelBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder`1
+    name: ElasticsearchDocumentModelBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.html
+  name: IElasticsearchDocumentModelResolver
+  nameWithType: IElasticsearchDocumentModelResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Modeling
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Modeling
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Modeling
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+    name: Modeling
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+    name: Modeling
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.html

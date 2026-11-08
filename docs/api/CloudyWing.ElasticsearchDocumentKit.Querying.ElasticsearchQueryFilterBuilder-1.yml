@@ -1,0 +1,2072 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  id: ElasticsearchQueryFilterBuilder`1
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Build
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.ContainsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.DateRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Exists(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation(System.String,CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.KeywordSuffix
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.MustNot(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.NumberRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Double},System.Nullable{System.Double})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Raw(System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{`0}})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.RegexpKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Should(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Term(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Terms(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.Object})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.String},System.String)
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.When(System.Boolean,System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  - CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.WildcardKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ElasticsearchQueryFilterBuilder
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 12
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 建立常見 Elasticsearch filter query 條件。
+  example: []
+  syntax:
+    content: 'public sealed class ElasticsearchQueryFilterBuilder<TDocument> where TDocument : class'
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    content.vb: Public NotInheritable Class ElasticsearchQueryFilterBuilder(Of TDocument As Class)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)
+  name.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.KeywordSuffix
+  commentId: F:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.KeywordSuffix
+  id: KeywordSuffix
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: KeywordSuffix
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.KeywordSuffix
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.KeywordSuffix
+  type: Field
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: KeywordSuffix
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 17
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 取得 keyword 欄位預設 suffix。
+  example: []
+  syntax:
+    content: public const string KeywordSuffix = "keyword"
+    return:
+      type: System.String
+    content.vb: Public Const KeywordSuffix As String = "keyword"
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).KeywordSuffix
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).KeywordSuffix
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Raw(System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{`0}})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Raw(System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{`0}})
+  id: Raw(System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{`0}})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Raw(Action<QueryDescriptor<TDocument>>)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Raw(Action<QueryDescriptor<TDocument>>)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Raw(System.Action<Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor<TDocument>>)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Raw
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 27
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入官方 query descriptor 設定動作。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> Raw(Action<QueryDescriptor<TDocument>> configureQuery)
+    parameters:
+    - id: configureQuery
+      type: System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{{TDocument}}}
+      description: query descriptor 設定動作。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function Raw(configureQuery As Action(Of QueryDescriptor(Of TDocument))) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Raw*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">configureQuery</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Raw(Action(Of QueryDescriptor(Of TDocument)))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Raw(System.Action(Of Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor(Of TDocument)))
+  name.vb: Raw(Action(Of QueryDescriptor(Of TDocument)))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.When(System.Boolean,System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.When(System.Boolean,System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  id: When(System.Boolean,System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: When(bool, Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.When(bool, Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.When(bool, System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>>)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: When
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 41
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 條件成立時執行指定的 filter 設定。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> When(bool condition, Action<ElasticsearchQueryFilterBuilder<TDocument>> configure)
+    parameters:
+    - id: condition
+      type: System.Boolean
+      description: 是否執行設定動作。
+    - id: configure
+      type: System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1}
+      description: filter builder 設定動作。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function [When](condition As Boolean, configure As Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.When*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">configure</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).When(Boolean, Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).When(Boolean, System.Action(Of CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)))
+  name.vb: When(Boolean, Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Term(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Term(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)
+  id: Term(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Term(Expression<Func<TDocument, object?>>, object?)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Term(Expression<Func<TDocument, object?>>, object?)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Term(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, object?)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Term
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 61
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 term filter；值為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或空白字串時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> Term(Expression<Func<TDocument, object?>> field, object? value)
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: value
+      type: System.Object
+      description: 查詢值。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function Term(field As Expression(Of Func(Of TDocument, Object)), value As Object) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Term*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Term(Expression(Of Func(Of TDocument, Object)), Object)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Term(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), Object)
+  name.vb: Term(Expression(Of Func(Of TDocument, Object)), Object)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  id: TermKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: TermKeyword(Expression<Func<TDocument, object?>>, string?, string)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.TermKeyword(Expression<Func<TDocument, object?>>, string?, string)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.TermKeyword(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, string?, string)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: TermKeyword
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 86
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 keyword 子欄位的 term filter；值為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或空白字串時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> TermKeyword(Expression<Func<TDocument, object?>> field, string? value, string suffix = "keyword")
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: value
+      type: System.String
+      description: 查詢值。
+    - id: suffix
+      type: System.String
+      description: keyword 子欄位 suffix。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function TermKeyword(field As Expression(Of Func(Of TDocument, Object)), value As String, suffix As String = "keyword") As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermKeyword*
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).TermKeyword(Expression(Of Func(Of TDocument, Object)), String, String)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).TermKeyword(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), String, String)
+  name.vb: TermKeyword(Expression(Of Func(Of TDocument, Object)), String, String)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Terms(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Terms(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.Object})
+  id: Terms(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.Object})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Terms(Expression<Func<TDocument, object?>>, IEnumerable<object?>?)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Terms(Expression<Func<TDocument, object?>>, IEnumerable<object?>?)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Terms(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, System.Collections.Generic.IEnumerable<object?>?)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Terms
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 101
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 terms filter；集合為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或沒有有效值時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> Terms(Expression<Func<TDocument, object?>> field, IEnumerable<object?>? values)
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.Object}
+      description: 查詢值集合。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function Terms(field As Expression(Of Func(Of TDocument, Object)), values As IEnumerable(Of Object)) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Terms*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Terms(Expression(Of Func(Of TDocument, Object)), IEnumerable(Of Object))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Terms(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), System.Collections.Generic.IEnumerable(Of Object))
+  name.vb: Terms(Expression(Of Func(Of TDocument, Object)), IEnumerable(Of Object))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: TermsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.String},System.String)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: TermsKeyword(Expression<Func<TDocument, object?>>, IEnumerable<string?>?, string)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.TermsKeyword(Expression<Func<TDocument, object?>>, IEnumerable<string?>?, string)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.TermsKeyword(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, System.Collections.Generic.IEnumerable<string?>?, string)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: TermsKeyword
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 135
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 keyword 子欄位的 terms filter。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> TermsKeyword(Expression<Func<TDocument, object?>> field, IEnumerable<string?>? values, string suffix = "keyword")
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: 查詢值集合。
+    - id: suffix
+      type: System.String
+      description: keyword 子欄位 suffix。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function TermsKeyword(field As Expression(Of Func(Of TDocument, Object)), values As IEnumerable(Of String), suffix As String = "keyword") As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermsKeyword*
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).TermsKeyword(Expression(Of Func(Of TDocument, Object)), IEnumerable(Of String), String)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).TermsKeyword(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), System.Collections.Generic.IEnumerable(Of String), String)
+  name.vb: TermsKeyword(Expression(Of Func(Of TDocument, Object)), IEnumerable(Of String), String)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Exists(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Exists(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  id: Exists(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Exists(Expression<Func<TDocument, object?>>, bool)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Exists(Expression<Func<TDocument, object?>>, bool)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Exists(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, bool)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Exists
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 150
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 exists filter。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> Exists(Expression<Func<TDocument, object?>> field, bool condition = true)
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: condition
+      type: System.Boolean
+      description: 是否加入 filter。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function Exists(field As Expression(Of Func(Of TDocument, Object)), condition As Boolean = True) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Exists*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Exists(Expression(Of Func(Of TDocument, Object)), Boolean)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Exists(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), Boolean)
+  name.vb: Exists(Expression(Of Func(Of TDocument, Object)), Boolean)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.ContainsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.ContainsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  id: ContainsKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: ContainsKeyword(Expression<Func<TDocument, object?>>, string?, bool, string)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.ContainsKeyword(Expression<Func<TDocument, object?>>, string?, bool, string)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.ContainsKeyword(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, string?, bool, string)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ContainsKeyword
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 172
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 keyword 子欄位的 wildcard contains filter；值為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或空白字串時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> ContainsKeyword(Expression<Func<TDocument, object?>> field, string? value, bool caseInsensitive = false, string suffix = "keyword")
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: value
+      type: System.String
+      description: 查詢文字。
+    - id: caseInsensitive
+      type: System.Boolean
+      description: 是否使用大小寫不敏感比對。
+    - id: suffix
+      type: System.String
+      description: keyword 子欄位 suffix。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function ContainsKeyword(field As Expression(Of Func(Of TDocument, Object)), value As String, caseInsensitive As Boolean = False, suffix As String = "keyword") As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.ContainsKeyword*
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).ContainsKeyword(Expression(Of Func(Of TDocument, Object)), String, Boolean, String)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).ContainsKeyword(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), String, Boolean, String)
+  name.vb: ContainsKeyword(Expression(Of Func(Of TDocument, Object)), String, Boolean, String)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.WildcardKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.WildcardKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  id: WildcardKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.Boolean,System.String)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: WildcardKeyword(Expression<Func<TDocument, object?>>, string?, bool, string)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.WildcardKeyword(Expression<Func<TDocument, object?>>, string?, bool, string)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.WildcardKeyword(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, string?, bool, string)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: WildcardKeyword
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 194
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 keyword 子欄位的 wildcard filter。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> WildcardKeyword(Expression<Func<TDocument, object?>> field, string? pattern, bool caseInsensitive = false, string suffix = "keyword")
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: pattern
+      type: System.String
+      description: wildcard pattern。
+    - id: caseInsensitive
+      type: System.Boolean
+      description: 是否使用大小寫不敏感比對。
+    - id: suffix
+      type: System.String
+      description: keyword 子欄位 suffix。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function WildcardKeyword(field As Expression(Of Func(Of TDocument, Object)), pattern As String, caseInsensitive As Boolean = False, suffix As String = "keyword") As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.WildcardKeyword*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).WildcardKeyword(Expression(Of Func(Of TDocument, Object)), String, Boolean, String)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).WildcardKeyword(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), String, Boolean, String)
+  name.vb: WildcardKeyword(Expression(Of Func(Of TDocument, Object)), String, Boolean, String)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.RegexpKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.RegexpKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  id: RegexpKeyword(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: RegexpKeyword(Expression<Func<TDocument, object?>>, string?, string)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.RegexpKeyword(Expression<Func<TDocument, object?>>, string?, string)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.RegexpKeyword(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, string?, string)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: RegexpKeyword
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 224
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 keyword 子欄位的 regexp filter；pattern 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或空白字串時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> RegexpKeyword(Expression<Func<TDocument, object?>> field, string? pattern, string suffix = "keyword")
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: pattern
+      type: System.String
+      description: regexp pattern。
+    - id: suffix
+      type: System.String
+      description: keyword 子欄位 suffix。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function RegexpKeyword(field As Expression(Of Func(Of TDocument, Object)), pattern As String, suffix As String = "keyword") As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.RegexpKeyword*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).RegexpKeyword(Expression(Of Func(Of TDocument, Object)), String, String)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).RegexpKeyword(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), String, String)
+  name.vb: RegexpKeyword(Expression(Of Func(Of TDocument, Object)), String, String)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.NumberRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Double},System.Nullable{System.Double})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.NumberRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Double},System.Nullable{System.Double})
+  id: NumberRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.Double},System.Nullable{System.Double})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: NumberRange(Expression<Func<TDocument, object?>>, double?, double?)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.NumberRange(Expression<Func<TDocument, object?>>, double?, double?)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.NumberRange(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, double?, double?)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: NumberRange
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 252
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 number range filter；未提供任何界線時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> NumberRange(Expression<Func<TDocument, object?>> field, double? greaterThanOrEqualTo = null, double? lessThanOrEqualTo = null)
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: greaterThanOrEqualTo
+      type: System.Nullable{System.Double}
+      description: 大於等於界線。
+    - id: lessThanOrEqualTo
+      type: System.Nullable{System.Double}
+      description: 小於等於界線。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function NumberRange(field As Expression(Of Func(Of TDocument, Object)), greaterThanOrEqualTo As Double? = Nothing, lessThanOrEqualTo As Double? = Nothing) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.NumberRange*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).NumberRange(Expression(Of Func(Of TDocument, Object)), Double?, Double?)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).NumberRange(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), Double?, Double?)
+  name.vb: NumberRange(Expression(Of Func(Of TDocument, Object)), Double?, Double?)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.DateRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.DateRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})
+  id: DateRange(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: DateRange(Expression<Func<TDocument, object?>>, DateTimeOffset?, DateTimeOffset?)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.DateRange(Expression<Func<TDocument, object?>>, DateTimeOffset?, DateTimeOffset?)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.DateRange(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, System.DateTimeOffset?, System.DateTimeOffset?)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DateRange
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 286
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 date range filter；未提供任何界線時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> DateRange(Expression<Func<TDocument, object?>> field, DateTimeOffset? greaterThanOrEqualTo = null, DateTimeOffset? lessThanOrEqualTo = null)
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: 欄位選擇式。
+    - id: greaterThanOrEqualTo
+      type: System.Nullable{System.DateTimeOffset}
+      description: 大於等於界線。
+    - id: lessThanOrEqualTo
+      type: System.Nullable{System.DateTimeOffset}
+      description: 小於等於界線。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function DateRange(field As Expression(Of Func(Of TDocument, Object)), greaterThanOrEqualTo As DateTimeOffset? = Nothing, lessThanOrEqualTo As DateTimeOffset? = Nothing) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.DateRange*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).DateRange(Expression(Of Func(Of TDocument, Object)), DateTimeOffset?, DateTimeOffset?)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).DateRange(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), System.DateTimeOffset?, System.DateTimeOffset?)
+  name.vb: DateRange(Expression(Of Func(Of TDocument, Object)), DateTimeOffset?, DateTimeOffset?)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  id: GeoPolygonWithin(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: GeoPolygonWithin(string, IEnumerable<(double Longitude, double Latitude)>?)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithin(string, IEnumerable<(double Longitude, double Latitude)>?)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithin(string, System.Collections.Generic.IEnumerable<(double Longitude, double Latitude)>?)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: GeoPolygonWithin
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 321
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 geo shape polygon within filter；座標為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或空集合時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> GeoPolygonWithin(string fieldName, IEnumerable<(double Longitude, double Latitude)>? coordinates)
+    parameters:
+    - id: fieldName
+      type: System.String
+      description: geo shape 欄位名稱。
+    - id: coordinates
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}}
+      description: polygon 座標集合，格式為 longitude、latitude。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function GeoPolygonWithin(fieldName As String, coordinates As IEnumerable(Of (Longitude As Double, Latitude As Double))) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">fieldName</code> 為空白字串，或 <code class="paramref">coordinates</code> 少於三個不同座標。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithin(String, IEnumerable(Of (Longitude As Double, Latitude As Double)))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithin(String, System.Collections.Generic.IEnumerable(Of (Longitude As Double, Latitude As Double)))
+  name.vb: GeoPolygonWithin(String, IEnumerable(Of (Longitude As Double, Latitude As Double)))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  id: GeoPolygonWithin(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: GeoPolygonWithin(Expression<Func<TDocument, object?>>, IEnumerable<(double Longitude, double Latitude)>?)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithin(Expression<Func<TDocument, object?>>, IEnumerable<(double Longitude, double Latitude)>?)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithin(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, System.Collections.Generic.IEnumerable<(double Longitude, double Latitude)>?)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: GeoPolygonWithin
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 338
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 geo shape polygon within filter；座標為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 或空集合時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> GeoPolygonWithin(Expression<Func<TDocument, object?>> field, IEnumerable<(double Longitude, double Latitude)>? coordinates)
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: geo shape 欄位。
+    - id: coordinates
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}}
+      description: polygon 座標集合，格式為 longitude、latitude。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function GeoPolygonWithin(field As Expression(Of Func(Of TDocument, Object)), coordinates As IEnumerable(Of (Longitude As Double, Latitude As Double))) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">coordinates</code> 少於三個不同座標。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithin(Expression(Of Func(Of TDocument, Object)), IEnumerable(Of (Longitude As Double, Latitude As Double)))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithin(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), System.Collections.Generic.IEnumerable(Of (Longitude As Double, Latitude As Double)))
+  name.vb: GeoPolygonWithin(Expression(Of Func(Of TDocument, Object)), IEnumerable(Of (Longitude As Double, Latitude As Double)))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation(System.String,CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation(System.String,CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  id: GeoPolygonWithRelation(System.String,CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: GeoPolygonWithRelation(string, GeoPolygon?, GeoShapeRelation)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithRelation(string, GeoPolygon?, GeoShapeRelation)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithRelation(string, CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon?, Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: GeoPolygonWithRelation
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 356
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: >-
+    加入 geo shape polygon filter，空間關係由 <code class="paramref">relation</code> 指定；
+
+    <code class="paramref">polygon</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> GeoPolygonWithRelation(string fieldName, GeoPolygon? polygon, GeoShapeRelation relation)
+    parameters:
+    - id: fieldName
+      type: System.String
+      description: geo shape 欄位名稱。
+    - id: polygon
+      type: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+      description: 查詢用的多邊形。
+    - id: relation
+      type: Elastic.Clients.Elasticsearch.GeoShapeRelation
+      description: 欄位幾何與多邊形的空間關係，例如 <xref href="Elastic.Clients.Elasticsearch.GeoShapeRelation.Within" data-throw-if-not-resolved="false"></xref>。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function GeoPolygonWithRelation(fieldName As String, polygon As GeoPolygon, relation As GeoShapeRelation) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">fieldName</code> 為空白字串。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithRelation(String, GeoPolygon, GeoShapeRelation)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithRelation(String, CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon, Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  name.vb: GeoPolygonWithRelation(String, GeoPolygon, GeoShapeRelation)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  id: GeoPolygonWithRelation(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon,Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: GeoPolygonWithRelation(Expression<Func<TDocument, object?>>, GeoPolygon?, GeoShapeRelation)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithRelation(Expression<Func<TDocument, object?>>, GeoPolygon?, GeoShapeRelation)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithRelation(System.Linq.Expressions.Expression<System.Func<TDocument, object?>>, CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon?, Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: GeoPolygonWithRelation
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 375
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: >-
+    加入 geo shape polygon filter，空間關係由 <code class="paramref">relation</code> 指定；
+
+    <code class="paramref">polygon</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 時略過。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> GeoPolygonWithRelation(Expression<Func<TDocument, object?>> field, GeoPolygon? polygon, GeoShapeRelation relation)
+    parameters:
+    - id: field
+      type: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+      description: geo shape 欄位。
+    - id: polygon
+      type: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+      description: 查詢用的多邊形。
+    - id: relation
+      type: Elastic.Clients.Elasticsearch.GeoShapeRelation
+      description: 欄位幾何與多邊形的空間關係，例如 <xref href="Elastic.Clients.Elasticsearch.GeoShapeRelation.Within" data-throw-if-not-resolved="false"></xref>。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function GeoPolygonWithRelation(field As Expression(Of Func(Of TDocument, Object)), polygon As GeoPolygon, relation As GeoShapeRelation) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">field</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithRelation(Expression(Of Func(Of TDocument, Object)), GeoPolygon, GeoShapeRelation)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithRelation(System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object)), CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon, Elastic.Clients.Elasticsearch.GeoShapeRelation)
+  name.vb: GeoPolygonWithRelation(Expression(Of Func(Of TDocument, Object)), GeoPolygon, GeoShapeRelation)
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Should(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Should(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  id: Should(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Should(Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Should(Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Should(System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>>)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Should
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 391
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入至少符合其中一項的 should filter。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> Should(Action<ElasticsearchQueryFilterBuilder<TDocument>> configure)
+    parameters:
+    - id: configure
+      type: System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1}
+      description: 內層 filter builder 設定動作。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function Should(configure As Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Should*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">configure</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Should(Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Should(System.Action(Of CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)))
+  name.vb: Should(Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.MustNot(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.MustNot(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  id: MustNot(System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}})
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: MustNot(Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.MustNot(Action<ElasticsearchQueryFilterBuilder<TDocument>>)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.MustNot(System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>>)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: MustNot
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 418
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 加入 must-not filter。
+  example: []
+  syntax:
+    content: public ElasticsearchQueryFilterBuilder<TDocument> MustNot(Action<ElasticsearchQueryFilterBuilder<TDocument>> configure)
+    parameters:
+    - id: configure
+      type: System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1}
+      description: 內層 filter builder 設定動作。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+      description: 目前 builder。
+    content.vb: Public Function MustNot(configure As Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))) As ElasticsearchQueryFilterBuilder(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.MustNot*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">configure</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).MustNot(Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).MustNot(System.Action(Of CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)))
+  name.vb: MustNot(Action(Of ElasticsearchQueryFilterBuilder(Of TDocument)))
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Build
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Build
+  id: Build
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Build()
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Build()
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Build
+    path: ../src/ElasticsearchDocumentKit/Querying/ElasticsearchQueryFilterBuilder.cs
+    startLine: 439
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Querying
+  summary: 建立官方 bool query 可接受的 filter 設定動作集合。
+  example: []
+  syntax:
+    content: public IReadOnlyList<Action<QueryDescriptor<TDocument>>> Build()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{{TDocument}}}}
+      description: filter 設定動作集合。
+    content.vb: Public Function Build() As IReadOnlyList(Of Action(Of QueryDescriptor(Of TDocument)))
+  overload: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Build*
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Build()
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Build()
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Querying
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Querying
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Querying
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Raw*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Raw
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_Raw_System_Action_Elastic_Clients_Elasticsearch_QueryDsl_QueryDescriptor__0___
+  name: Raw
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Raw
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Raw
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Raw
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Raw
+- uid: System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{{TDocument}}}
+  commentId: T:System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{`0}}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<QueryDescriptor<TDocument>>
+  nameWithType: Action<QueryDescriptor<TDocument>>
+  fullName: System.Action<Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor<TDocument>>
+  nameWithType.vb: Action(Of QueryDescriptor(Of TDocument))
+  fullName.vb: System.Action(Of Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor(Of TDocument))
+  name.vb: Action(Of QueryDescriptor(Of TDocument))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor`1
+    name: QueryDescriptor
+    isExternal: true
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor`1
+    name: QueryDescriptor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  name: ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)
+  name.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.When*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.When
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_When_System_Boolean_System_Action_CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder__0___
+  name: When
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.When
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.When
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).When
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).When
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1}
+  commentId: T:System.Action{CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ElasticsearchQueryFilterBuilder<TDocument>>
+  nameWithType: Action<ElasticsearchQueryFilterBuilder<TDocument>>
+  fullName: System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>>
+  nameWithType.vb: Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))
+  fullName.vb: System.Action(Of CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument))
+  name.vb: Action(Of ElasticsearchQueryFilterBuilder(Of TDocument))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Term*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Term
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_Term_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Object_
+  name: Term
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Term
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Term
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Term
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Term
+- uid: System.Linq.Expressions.Expression{System.Func{{TDocument},System.Object}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Object}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TDocument, object>>
+  nameWithType: Expression<Func<TDocument, object>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TDocument, object>>
+  nameWithType.vb: Expression(Of Func(Of TDocument, Object))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TDocument, Object))
+  name.vb: Expression(Of Func(Of TDocument, Object))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TDocument
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermKeyword*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermKeyword
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_TermKeyword_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_String_System_String_
+  name: TermKeyword
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.TermKeyword
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.TermKeyword
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).TermKeyword
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).TermKeyword
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Terms*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Terms
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_Terms_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Collections_Generic_IEnumerable_System_Object__
+  name: Terms
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Terms
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Terms
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Terms
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Terms
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermsKeyword*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.TermsKeyword
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_TermsKeyword_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Collections_Generic_IEnumerable_System_String__System_String_
+  name: TermsKeyword
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.TermsKeyword
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.TermsKeyword
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).TermsKeyword
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).TermsKeyword
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Exists*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Exists
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_Exists_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_
+  name: Exists
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Exists
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Exists
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Exists
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Exists
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.ContainsKeyword*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.ContainsKeyword
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_ContainsKeyword_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_String_System_Boolean_System_String_
+  name: ContainsKeyword
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.ContainsKeyword
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.ContainsKeyword
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).ContainsKeyword
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).ContainsKeyword
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.WildcardKeyword*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.WildcardKeyword
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_WildcardKeyword_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_String_System_Boolean_System_String_
+  name: WildcardKeyword
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.WildcardKeyword
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.WildcardKeyword
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).WildcardKeyword
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).WildcardKeyword
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.RegexpKeyword*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.RegexpKeyword
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_RegexpKeyword_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_String_System_String_
+  name: RegexpKeyword
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.RegexpKeyword
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.RegexpKeyword
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).RegexpKeyword
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).RegexpKeyword
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.NumberRange*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.NumberRange
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_NumberRange_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Nullable_System_Double__System_Nullable_System_Double__
+  name: NumberRange
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.NumberRange
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.NumberRange
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).NumberRange
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).NumberRange
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.DateRange*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.DateRange
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_DateRange_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Nullable_System_DateTimeOffset__System_Nullable_System_DateTimeOffset__
+  name: DateRange
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.DateRange
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.DateRange
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).DateRange
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).DateRange
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithin
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_GeoPolygonWithin_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_Double_System_Double___
+  name: GeoPolygonWithin
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithin
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithin
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithin
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithin
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Double,System.Double}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(double Longitude, double Latitude)>
+  nameWithType: IEnumerable<(double Longitude, double Latitude)>
+  fullName: System.Collections.Generic.IEnumerable<(double Longitude, double Latitude)>
+  nameWithType.vb: IEnumerable(Of (Longitude As Double, Latitude As Double))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (Longitude As Double, Latitude As Double))
+  name.vb: IEnumerable(Of (Longitude As Double, Latitude As Double))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Longitude
+    name: Longitude
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.longitude
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Latitude
+    name: Latitude
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.latitude
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.Longitude
+    name: Longitude
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.longitude
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Latitude
+    name: Latitude
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.latitude
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  - name: )
+- uid: Elastic.Clients.Elasticsearch.GeoShapeRelation.Within
+  commentId: F:Elastic.Clients.Elasticsearch.GeoShapeRelation.Within
+  isExternal: true
+  name: Within
+  nameWithType: GeoShapeRelation.Within
+  fullName: Elastic.Clients.Elasticsearch.GeoShapeRelation.Within
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.GeoPolygonWithRelation
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_GeoPolygonWithRelation_System_String_CloudyWing_ElasticsearchDocumentKit_Geo_GeoPolygon_Elastic_Clients_Elasticsearch_GeoShapeRelation_
+  name: GeoPolygonWithRelation
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithRelation
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithRelation
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithRelation
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).GeoPolygonWithRelation
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  parent: CloudyWing.ElasticsearchDocumentKit.Geo
+  href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.html
+  name: GeoPolygon
+  nameWithType: GeoPolygon
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+- uid: Elastic.Clients.Elasticsearch.GeoShapeRelation
+  commentId: T:Elastic.Clients.Elasticsearch.GeoShapeRelation
+  parent: Elastic.Clients.Elasticsearch
+  isExternal: true
+  name: GeoShapeRelation
+  nameWithType: GeoShapeRelation
+  fullName: Elastic.Clients.Elasticsearch.GeoShapeRelation
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Geo
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Geo
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Geo
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo
+    name: Geo
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo
+    name: Geo
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.html
+- uid: Elastic.Clients.Elasticsearch
+  commentId: N:Elastic.Clients.Elasticsearch
+  isExternal: true
+  name: Elastic.Clients.Elasticsearch
+  nameWithType: Elastic.Clients.Elasticsearch
+  fullName: Elastic.Clients.Elasticsearch
+  spec.csharp:
+  - uid: Elastic
+    name: Elastic
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients
+    name: Clients
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients.Elasticsearch
+    name: Elasticsearch
+    isExternal: true
+  spec.vb:
+  - uid: Elastic
+    name: Elastic
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients
+    name: Clients
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients.Elasticsearch
+    name: Elasticsearch
+    isExternal: true
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Should*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Should
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_Should_System_Action_CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder__0___
+  name: Should
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Should
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Should
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Should
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Should
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.MustNot*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.MustNot
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_MustNot_System_Action_CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder__0___
+  name: MustNot
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.MustNot
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.MustNot
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).MustNot
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).MustNot
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Build*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1.Build
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html#CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder_1_Build
+  name: Build
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>.Build
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Build
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument).Build
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument).Build
+- uid: System.Collections.Generic.IReadOnlyList{System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{{TDocument}}}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Action{Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor{`0}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Action<QueryDescriptor<TDocument>>>
+  nameWithType: IReadOnlyList<Action<QueryDescriptor<TDocument>>>
+  fullName: System.Collections.Generic.IReadOnlyList<System.Action<Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor<TDocument>>>
+  nameWithType.vb: IReadOnlyList(Of Action(Of QueryDescriptor(Of TDocument)))
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of System.Action(Of Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor(Of TDocument)))
+  name.vb: IReadOnlyList(Of Action(Of QueryDescriptor(Of TDocument)))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor`1
+    name: QueryDescriptor
+    isExternal: true
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor`1
+    name: QueryDescriptor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,626 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  id: DocumentCountResult
+  parent: CloudyWing.ElasticsearchDocumentKit
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode
+  langs:
+  - csharp
+  - vb
+  name: DocumentCountResult
+  nameWithType: DocumentCountResult
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DocumentCountResult
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 5
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 表示文件筆數查詢結果。
+  example: []
+  syntax:
+    content: public sealed class DocumentCountResult
+    content.vb: Public NotInheritable Class DocumentCountResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful
+  id: IsSuccessful
+  parent: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  langs:
+  - csharp
+  - vb
+  name: IsSuccessful
+  nameWithType: DocumentCountResult.IsSuccessful
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IsSuccessful
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 9
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得操作是否成功。
+  example: []
+  syntax:
+    content: public required bool IsSuccessful { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSuccessful As Boolean
+  overload: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful*
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName
+  id: IndexName
+  parent: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  langs:
+  - csharp
+  - vb
+  name: IndexName
+  nameWithType: DocumentCountResult.IndexName
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IndexName
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 14
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得 index 名稱。
+  example: []
+  syntax:
+    content: public string? IndexName { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IndexName As String
+  overload: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName*
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count
+  id: Count
+  parent: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: DocumentCountResult.Count
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Count
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 20
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得符合條件的文件筆數。
+  example: []
+  syntax:
+    content: public long Count { get; init; }
+    parameters: []
+    return:
+      type: System.Int64
+      description: 操作失敗時為 0。
+    content.vb: Public Property Count As Long
+  overload: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count*
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode
+  id: StatusCode
+  parent: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: DocumentCountResult.StatusCode
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: StatusCode
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 25
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得 HTTP 狀態碼。
+  example: []
+  syntax:
+    content: public int? StatusCode { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property StatusCode As Integer?
+  overload: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode*
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType
+  id: ErrorType
+  parent: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  langs:
+  - csharp
+  - vb
+  name: ErrorType
+  nameWithType: DocumentCountResult.ErrorType
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ErrorType
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 30
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得錯誤類型。
+  example: []
+  syntax:
+    content: public string? ErrorType { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ErrorType As String
+  overload: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType*
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason
+  id: ErrorReason
+  parent: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  langs:
+  - csharp
+  - vb
+  name: ErrorReason
+  nameWithType: DocumentCountResult.ErrorReason
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ErrorReason
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 35
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得錯誤原因。
+  example: []
+  syntax:
+    content: public string? ErrorReason { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ErrorReason As String
+  overload: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason*
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary
+  id: ResponseSummary
+  parent: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  langs:
+  - csharp
+  - vb
+  name: ResponseSummary
+  nameWithType: DocumentCountResult.ResponseSummary
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/DocumentCountResult.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ResponseSummary
+    path: ../src/ElasticsearchDocumentKit/DocumentCountResult.cs
+    startLine: 40
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得原始回應摘要。
+  example: []
+  syntax:
+    content: public string? ResponseSummary { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ResponseSummary As String
+  overload: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary*
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentCountResult_IsSuccessful
+  name: IsSuccessful
+  nameWithType: DocumentCountResult.IsSuccessful
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IsSuccessful
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentCountResult_IndexName
+  name: IndexName
+  nameWithType: DocumentCountResult.IndexName
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.IndexName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentCountResult_Count
+  name: Count
+  nameWithType: DocumentCountResult.Count
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.Count
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentCountResult_StatusCode
+  name: StatusCode
+  nameWithType: DocumentCountResult.StatusCode
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.StatusCode
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentCountResult_ErrorType
+  name: ErrorType
+  nameWithType: DocumentCountResult.ErrorType
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorType
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentCountResult_ErrorReason
+  name: ErrorReason
+  nameWithType: DocumentCountResult.ErrorReason
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ErrorReason
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentCountResult_ResponseSummary
+  name: ResponseSummary
+  nameWithType: DocumentCountResult.ResponseSummary
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.ResponseSummary

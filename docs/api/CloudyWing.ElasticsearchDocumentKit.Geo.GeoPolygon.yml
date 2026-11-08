@@ -1,0 +1,555 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  id: GeoPolygon
+  parent: CloudyWing.ElasticsearchDocumentKit.Geo
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.#ctor(System.Collections.Generic.IEnumerable{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint})
+  - CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points
+  langs:
+  - csharp
+  - vb
+  name: GeoPolygon
+  nameWithType: GeoPolygon
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Geo/GeoPolygon.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: GeoPolygon
+    path: ../src/ElasticsearchDocumentKit/Geo/GeoPolygon.cs
+    startLine: 8
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Geo
+  summary: 表示作為地理查詢條件的多邊形，只含外環，不支援內環。
+  remarks: 此型別只用於查詢條件，不提供 JSON converter，不能作為文件屬性。
+  example: []
+  syntax:
+    content: public sealed class GeoPolygon
+    content.vb: Public NotInheritable Class GeoPolygon
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.#ctor(System.Collections.Generic.IEnumerable{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint})
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.#ctor(System.Collections.Generic.IEnumerable{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint})
+  id: '#ctor(System.Collections.Generic.IEnumerable{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint})'
+  parent: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  langs:
+  - csharp
+  - vb
+  name: GeoPolygon(IEnumerable<GeoPoint>)
+  nameWithType: GeoPolygon.GeoPolygon(IEnumerable<GeoPoint>)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.GeoPolygon(System.Collections.Generic.IEnumerable<CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint>)
+  type: Constructor
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Geo/GeoPolygon.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: .ctor
+    path: ../src/ElasticsearchDocumentKit/Geo/GeoPolygon.cs
+    startLine: 17
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Geo
+  summary: 初始化 <xref href="CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon" data-throw-if-not-resolved="false"></xref> 類別的新執行個體。
+  example: []
+  syntax:
+    content: public GeoPolygon(IEnumerable<GeoPoint> points)
+    parameters:
+    - id: points
+      type: System.Collections.Generic.IEnumerable{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint}
+      description: 外環的頂點；首尾不同時自動在尾端補上首點使多邊形閉合。
+    content.vb: Public Sub New(points As IEnumerable(Of GeoPoint))
+  overload: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">points</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">points</code> 含有 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> 元素，或不同座標少於三個。
+  nameWithType.vb: GeoPolygon.New(IEnumerable(Of GeoPoint))
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.New(System.Collections.Generic.IEnumerable(Of CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint))
+  name.vb: New(IEnumerable(Of GeoPoint))
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points
+  id: Points
+  parent: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  langs:
+  - csharp
+  - vb
+  name: Points
+  nameWithType: GeoPolygon.Points
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Geo/GeoPolygon.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Points
+    path: ../src/ElasticsearchDocumentKit/Geo/GeoPolygon.cs
+    startLine: 44
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Geo
+  summary: 取得已閉合的頂點集合。
+  example: []
+  syntax:
+    content: public IReadOnlyList<GeoPoint> Points { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint}
+      description: 首點與末點相同。
+    content.vb: Public ReadOnly Property Points As IReadOnlyList(Of GeoPoint)
+  overload: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points*
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Geo
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Geo
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Geo
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo
+    name: Geo
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo
+    name: Geo
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  parent: CloudyWing.ElasticsearchDocumentKit.Geo
+  href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.html
+  name: GeoPolygon
+  nameWithType: GeoPolygon
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.#ctor*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.#ctor
+  href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.html#CloudyWing_ElasticsearchDocumentKit_Geo_GeoPolygon__ctor_System_Collections_Generic_IEnumerable_CloudyWing_ElasticsearchDocumentKit_Geo_GeoPoint__
+  name: GeoPolygon
+  nameWithType: GeoPolygon.GeoPolygon
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.GeoPolygon
+  nameWithType.vb: GeoPolygon.New
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint}
+  commentId: T:System.Collections.Generic.IEnumerable{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<GeoPoint>
+  nameWithType: IEnumerable<GeoPoint>
+  fullName: System.Collections.Generic.IEnumerable<CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint>
+  nameWithType.vb: IEnumerable(Of GeoPoint)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint)
+  name.vb: IEnumerable(Of GeoPoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+    name: GeoPoint
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+    name: GeoPoint
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points
+  href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.html#CloudyWing_ElasticsearchDocumentKit_Geo_GeoPolygon_Points
+  name: Points
+  nameWithType: GeoPolygon.Points
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.Points
+- uid: System.Collections.Generic.IReadOnlyList{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint}
+  commentId: T:System.Collections.Generic.IReadOnlyList{CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<GeoPoint>
+  nameWithType: IReadOnlyList<GeoPoint>
+  fullName: System.Collections.Generic.IReadOnlyList<CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint>
+  nameWithType.vb: IReadOnlyList(Of GeoPoint)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint)
+  name.vb: IReadOnlyList(Of GeoPoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+    name: GeoPoint
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+    name: GeoPoint
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

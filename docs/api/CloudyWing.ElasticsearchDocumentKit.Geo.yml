@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Geo
+  id: CloudyWing.ElasticsearchDocumentKit.Geo
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+  - CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  langs:
+  - csharp
+  - vb
+  name: CloudyWing.ElasticsearchDocumentKit.Geo
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Geo
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo
+  type: Namespace
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+  parent: CloudyWing.ElasticsearchDocumentKit.Geo
+  href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint.html
+  name: GeoPoint
+  nameWithType: GeoPoint
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPoint
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+  parent: CloudyWing.ElasticsearchDocumentKit.Geo
+  href: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon.html
+  name: GeoPolygon
+  nameWithType: GeoPolygon
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo.GeoPolygon
+- uid: CloudyWing.ElasticsearchDocumentKit.Geo
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Geo
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Geo
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Geo
+  fullName: CloudyWing.ElasticsearchDocumentKit.Geo
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo
+    name: Geo
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Geo
+    name: Geo
+    href: CloudyWing.ElasticsearchDocumentKit.Geo.html

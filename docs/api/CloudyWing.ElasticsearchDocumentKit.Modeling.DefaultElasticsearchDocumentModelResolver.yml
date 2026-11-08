@@ -1,0 +1,521 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  id: DefaultElasticsearchDocumentModelResolver
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.#ctor(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions,CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver)
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve``1
+  langs:
+  - csharp
+  - vb
+  name: DefaultElasticsearchDocumentModelResolver
+  nameWithType: DefaultElasticsearchDocumentModelResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Modeling/DefaultElasticsearchDocumentModelResolver.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DefaultElasticsearchDocumentModelResolver
+    path: ../src/ElasticsearchDocumentKit/Modeling/DefaultElasticsearchDocumentModelResolver.cs
+    startLine: 7
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Modeling
+  summary: 依工具庫設定與 index 命名規則解析文件模型。
+  example: []
+  syntax:
+    content: 'public sealed class DefaultElasticsearchDocumentModelResolver : IElasticsearchDocumentModelResolver'
+    content.vb: Public NotInheritable Class DefaultElasticsearchDocumentModelResolver Implements IElasticsearchDocumentModelResolver
+  inheritance:
+  - System.Object
+  implements:
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.#ctor(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions,CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.#ctor(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions,CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver)
+  id: '#ctor(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions,CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver)'
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  langs:
+  - csharp
+  - vb
+  name: DefaultElasticsearchDocumentModelResolver(ElasticsearchDocumentsOptions?, IIndexNameResolver?)
+  nameWithType: DefaultElasticsearchDocumentModelResolver.DefaultElasticsearchDocumentModelResolver(ElasticsearchDocumentsOptions?, IIndexNameResolver?)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.DefaultElasticsearchDocumentModelResolver(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions?, CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver?)
+  type: Constructor
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Modeling/DefaultElasticsearchDocumentModelResolver.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: .ctor
+    path: ../src/ElasticsearchDocumentKit/Modeling/DefaultElasticsearchDocumentModelResolver.cs
+    startLine: 17
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Modeling
+  summary: 初始化 <xref href="CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver" data-throw-if-not-resolved="false"></xref> 類別的新執行個體。
+  example: []
+  syntax:
+    content: public DefaultElasticsearchDocumentModelResolver(ElasticsearchDocumentsOptions? options = null, IIndexNameResolver? indexNameResolver = null)
+    parameters:
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+      description: Elasticsearch documents 設定。
+    - id: indexNameResolver
+      type: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+      description: index 名稱解析器。
+    content.vb: Public Sub New(options As ElasticsearchDocumentsOptions = Nothing, indexNameResolver As IIndexNameResolver = Nothing)
+  overload: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.#ctor*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: 設定值不符合工具庫需求時。
+  nameWithType.vb: DefaultElasticsearchDocumentModelResolver.New(ElasticsearchDocumentsOptions, IIndexNameResolver)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.New(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions, CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver)
+  name.vb: New(ElasticsearchDocumentsOptions, IIndexNameResolver)
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve``1
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve``1
+  id: Resolve``1
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  langs:
+  - csharp
+  - vb
+  name: Resolve<TDocument>()
+  nameWithType: DefaultElasticsearchDocumentModelResolver.Resolve<TDocument>()
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve<TDocument>()
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Modeling/DefaultElasticsearchDocumentModelResolver.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Resolve
+    path: ../src/ElasticsearchDocumentKit/Modeling/DefaultElasticsearchDocumentModelResolver.cs
+    startLine: 29
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Modeling
+  summary: 解析指定文件型別的 Elasticsearch 模型設定。
+  example: []
+  syntax:
+    content: 'public ElasticsearchDocumentModel<TDocument> Resolve<TDocument>() where TDocument : class'
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    return:
+      type: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel{{TDocument}}
+      description: 文件模型設定。
+    content.vb: Public Function Resolve(Of TDocument As Class)() As ElasticsearchDocumentModel(Of TDocument)
+  overload: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve*
+  implements:
+  - CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve``1
+  nameWithType.vb: DefaultElasticsearchDocumentModelResolver.Resolve(Of TDocument)()
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve(Of TDocument)()
+  name.vb: Resolve(Of TDocument)()
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Modeling
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Modeling
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Modeling
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+    name: Modeling
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling
+    name: Modeling
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.html
+  name: IElasticsearchDocumentModelResolver
+  nameWithType: IElasticsearchDocumentModelResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.html
+  name: DefaultElasticsearchDocumentModelResolver
+  nameWithType: DefaultElasticsearchDocumentModelResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.#ctor*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.#ctor
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.html#CloudyWing_ElasticsearchDocumentKit_Modeling_DefaultElasticsearchDocumentModelResolver__ctor_CloudyWing_ElasticsearchDocumentKit_ElasticsearchDocumentsOptions_CloudyWing_ElasticsearchDocumentKit_IIndexNameResolver_
+  name: DefaultElasticsearchDocumentModelResolver
+  nameWithType: DefaultElasticsearchDocumentModelResolver.DefaultElasticsearchDocumentModelResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.DefaultElasticsearchDocumentModelResolver
+  nameWithType.vb: DefaultElasticsearchDocumentModelResolver.New
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.New
+  name.vb: New
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.html
+  name: ElasticsearchDocumentsOptions
+  nameWithType: ElasticsearchDocumentsOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+- uid: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.html
+  name: IIndexNameResolver
+  nameWithType: IIndexNameResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.html#CloudyWing_ElasticsearchDocumentKit_Modeling_DefaultElasticsearchDocumentModelResolver_Resolve__1
+  name: Resolve
+  nameWithType: DefaultElasticsearchDocumentModelResolver.Resolve
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve``1
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve``1
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.html#CloudyWing_ElasticsearchDocumentKit_Modeling_IElasticsearchDocumentModelResolver_Resolve__1
+  name: Resolve<TDocument>()
+  nameWithType: IElasticsearchDocumentModelResolver.Resolve<TDocument>()
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve<TDocument>()
+  nameWithType.vb: IElasticsearchDocumentModelResolver.Resolve(Of TDocument)()
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve(Of TDocument)()
+  name.vb: Resolve(Of TDocument)()
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve``1
+    name: Resolve
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.html#CloudyWing_ElasticsearchDocumentKit_Modeling_IElasticsearchDocumentModelResolver_Resolve__1
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve``1
+    name: Resolve
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.html#CloudyWing_ElasticsearchDocumentKit_Modeling_IElasticsearchDocumentModelResolver_Resolve__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: (
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel{``0}
+  parent: CloudyWing.ElasticsearchDocumentKit.Modeling
+  definition: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  name: ElasticsearchDocumentModel<TDocument>
+  nameWithType: ElasticsearchDocumentModel<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>
+  nameWithType.vb: ElasticsearchDocumentModel(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel(Of TDocument)
+  name.vb: ElasticsearchDocumentModel(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+    name: ElasticsearchDocumentModel
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+    name: ElasticsearchDocumentModel
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+  href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  name: ElasticsearchDocumentModel<TDocument>
+  nameWithType: ElasticsearchDocumentModel<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>
+  nameWithType.vb: ElasticsearchDocumentModel(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel(Of TDocument)
+  name.vb: ElasticsearchDocumentModel(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+    name: ElasticsearchDocumentModel
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel`1
+    name: ElasticsearchDocumentModel
+    href: CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )

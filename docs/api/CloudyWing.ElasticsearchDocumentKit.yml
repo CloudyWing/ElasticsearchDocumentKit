@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  id: CloudyWing.ElasticsearchDocumentKit
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+  - CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  - CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure
+  - CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+  - CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult
+  - CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver
+  - CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  - CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  - CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+  - CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+  - CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore`1
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute
+  - CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  - CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  - CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+  - CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+  - CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+  langs:
+  - csharp
+  - vb
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  type: Namespace
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+  href: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter-1.html
+  name: BulkDeadLetter<TDocument>
+  nameWithType: BulkDeadLetter<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>
+  nameWithType.vb: BulkDeadLetter(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter(Of TDocument)
+  name.vb: BulkDeadLetter(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+    name: BulkDeadLetter
+    href: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+    name: BulkDeadLetter
+    href: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  name: BulkIndexOptions<TDocument>
+  nameWithType: BulkIndexOptions<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>
+  nameWithType.vb: BulkIndexOptions(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument)
+  name.vb: BulkIndexOptions(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+    name: BulkIndexOptions
+    href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+    name: BulkIndexOptions
+    href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.html
+  name: BulkOperationFailure
+  nameWithType: BulkOperationFailure
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+  href: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.html
+  name: BulkOperationResult
+  nameWithType: BulkOperationResult
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+- uid: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult
+  href: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.html
+  name: ByQueryOperationResult
+  nameWithType: ByQueryOperationResult
+  fullName: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult
+- uid: CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver
+  href: CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver.html
+  name: DefaultIndexNameResolver
+  nameWithType: DefaultIndexNameResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  name: DeleteByQueryRequest<TDocument>
+  nameWithType: DeleteByQueryRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument)
+  name.vb: DeleteByQueryRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+    name: DeleteByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+    name: DeleteByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html
+  name: DocumentCountResult
+  nameWithType: DocumentCountResult
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult-1.html
+  name: DocumentGetResult<TDocument>
+  nameWithType: DocumentGetResult<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>
+  nameWithType.vb: DocumentGetResult(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult(Of TDocument)
+  name.vb: DocumentGetResult(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+    name: DocumentGetResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+    name: DocumentGetResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.html
+  name: DocumentOperationResult
+  nameWithType: DocumentOperationResult
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions.html
+  name: DocumentWriteOptions
+  nameWithType: DocumentWriteOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.html
+  name: ElasticsearchDocumentsOptions
+  nameWithType: ElasticsearchDocumentsOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions.html
+  name: ElasticsearchDocumentsServiceCollectionExtensions
+  nameWithType: ElasticsearchDocumentsServiceCollectionExtensions
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.html
+  name: ElasticsearchDocumentsTelemetry
+  nameWithType: ElasticsearchDocumentsTelemetry
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore`1
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore-1.html
+  name: ElasticsearchDocumentStore<TDocument>
+  nameWithType: ElasticsearchDocumentStore<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>
+  nameWithType.vb: ElasticsearchDocumentStore(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore(Of TDocument)
+  name.vb: ElasticsearchDocumentStore(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore`1
+    name: ElasticsearchDocumentStore
+    href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore`1
+    name: ElasticsearchDocumentStore
+    href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute.html
+  name: ElasticsearchIndexNameAttribute
+  nameWithType: ElasticsearchIndexNameAttribute
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute
+- uid: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator
+  href: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator.html
+  name: ElasticsearchIndexNameValidator
+  nameWithType: ElasticsearchIndexNameValidator
+  fullName: CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html
+  name: IElasticsearchDocumentStore<TDocument>
+  nameWithType: IElasticsearchDocumentStore<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument)
+  name.vb: IElasticsearchDocumentStore(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+    name: IElasticsearchDocumentStore
+    href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+    name: IElasticsearchDocumentStore
+    href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.html
+  name: IIndexNameResolver
+  nameWithType: IIndexNameResolver
+  fullName: CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+- uid: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions.html
+  name: IndexDocumentOptions
+  nameWithType: IndexDocumentOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+- uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  name: UpdateByQueryRequest<TDocument>
+  nameWithType: UpdateByQueryRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest<TDocument>
+  nameWithType.vb: UpdateByQueryRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest(Of TDocument)
+  name.vb: UpdateByQueryRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+    name: UpdateByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+    name: UpdateByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions.html
+  name: UpdateDocumentOptions
+  nameWithType: UpdateDocumentOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html

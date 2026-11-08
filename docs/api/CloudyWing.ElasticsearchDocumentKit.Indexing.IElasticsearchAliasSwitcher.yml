@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+  id: IElasticsearchAliasSwitcher
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IElasticsearchAliasSwitcher
+  nameWithType: IElasticsearchAliasSwitcher
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+  type: Interface
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Indexing/IElasticsearchAliasSwitcher.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IElasticsearchAliasSwitcher
+    path: ../src/ElasticsearchDocumentKit/Indexing/IElasticsearchAliasSwitcher.cs
+    startLine: 5
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Indexing
+  summary: 切換 Elasticsearch alias 指向的 index。
+  example: []
+  syntax:
+    content: public interface IElasticsearchAliasSwitcher
+    content.vb: Public Interface IElasticsearchAliasSwitcher
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  id: SwitchAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+  langs:
+  - csharp
+  - vb
+  name: SwitchAsync(string, string, IEnumerable<string>?, CancellationToken)
+  nameWithType: IElasticsearchAliasSwitcher.SwitchAsync(string, string, IEnumerable<string>?, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync(string, string, System.Collections.Generic.IEnumerable<string>?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Indexing/IElasticsearchAliasSwitcher.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SwitchAsync
+    path: ../src/ElasticsearchDocumentKit/Indexing/IElasticsearchAliasSwitcher.cs
+    startLine: 14
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Indexing
+  summary: 將 alias 切換到指定 index，並從指定舊 index 移除同一 alias。
+  example: []
+  syntax:
+    content: Task<AliasSwitchResult> SwitchAsync(string aliasName, string newIndexName, IEnumerable<string>? oldIndexNames = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: aliasName
+      type: System.String
+      description: alias 名稱。
+    - id: newIndexName
+      type: System.String
+      description: 新的 index 名稱。
+    - id: oldIndexNames
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: 要移除 alias 的舊 index 名稱集合。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult}
+      description: alias 切換結果。
+    content.vb: Function SwitchAsync(aliasName As String, newIndexName As String, oldIndexNames As IEnumerable(Of String) = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of AliasSwitchResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync*
+  nameWithType.vb: IElasticsearchAliasSwitcher.SwitchAsync(String, String, IEnumerable(Of String), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync(String, String, System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  name.vb: SwitchAsync(String, String, IEnumerable(Of String), CancellationToken)
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Indexing
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Indexing
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Indexing
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.html#CloudyWing_ElasticsearchDocumentKit_Indexing_IElasticsearchAliasSwitcher_SwitchAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  name: SwitchAsync
+  nameWithType: IElasticsearchAliasSwitcher.SwitchAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AliasSwitchResult>
+  nameWithType: Task<AliasSwitchResult>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult>
+  nameWithType.vb: Task(Of AliasSwitchResult)
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult)
+  name.vb: Task(Of AliasSwitchResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+    name: AliasSwitchResult
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+    name: AliasSwitchResult
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

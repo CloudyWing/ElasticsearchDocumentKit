@@ -1,0 +1,263 @@
+#nullable enable
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.Attempt.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.Attempt.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.BulkDeadLetter() -> void
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.ChunkIndex.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.ChunkIndex.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.Document.get -> TDocument!
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.Document.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.Failure.get -> CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure!
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.Failure.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.IndexName.get -> string!
+CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>.IndexName.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.BulkIndexOptions() -> void
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.ChunkSize.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.ChunkSize.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.DeadLetterCallback.get -> System.Func<CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument!>!, System.Threading.CancellationToken, System.Threading.Tasks.Task!>?
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.DeadLetterCallback.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.MaxRetryAttempts.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.MaxRetryAttempts.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.RetryDelayProvider.get -> System.Func<int, System.TimeSpan>?
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.RetryDelayProvider.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.Validate() -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.BulkOperationFailure() -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.DocumentId.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.DocumentId.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.ErrorReason.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.ErrorReason.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.ErrorType.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.ErrorType.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.IndexName.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.IndexName.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.ItemIndex.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.ItemIndex.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.Operation.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.Operation.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.StatusCode.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure.StatusCode.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.BulkOperationResult() -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.ErrorReason.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.ErrorReason.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.ErrorType.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.ErrorType.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.FailedCount.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.FailedCount.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.Failures.get -> System.Collections.Generic.IReadOnlyList<CloudyWing.ElasticsearchDocumentKit.BulkOperationFailure!>!
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.Failures.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.HasErrors.get -> bool
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.HasErrors.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.IsSuccessful.get -> bool
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.IsSuccessful.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.ResponseSummary.get -> string?
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.ResponseSummary.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.SucceededCount.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.SucceededCount.init -> void
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.TotalCount.get -> int
+CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.TotalCount.init -> void
+CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver
+CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver.DefaultIndexNameResolver(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions? options = null) -> void
+CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver.Resolve(System.Type! documentType) -> string!
+CloudyWing.ElasticsearchDocumentKit.DefaultIndexNameResolver.Resolve<TDocument>() -> string!
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.Document.get -> TDocument?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.Document.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.DocumentGetResult() -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.DocumentId.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.DocumentId.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.ErrorReason.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.ErrorReason.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.ErrorType.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.ErrorType.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.Found.get -> bool
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.Found.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.IndexName.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.IndexName.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.IsSuccessful.get -> bool
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.IsSuccessful.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.ResponseSummary.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.ResponseSummary.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.StatusCode.get -> int?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.StatusCode.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.Version.get -> long?
+CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>.Version.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.DocumentId.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.DocumentId.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.DocumentOperationResult() -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.ErrorReason.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.ErrorReason.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.ErrorType.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.ErrorType.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IndexName.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IndexName.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IsSuccessful.get -> bool
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IsSuccessful.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.Operation.get -> string!
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.Operation.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.ResponseSummary.get -> string?
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.ResponseSummary.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.StatusCode.get -> int?
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.StatusCode.init -> void
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.Version.get -> long?
+CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.Version.init -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.ConfigureDocument<TDocument>(System.Action<CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument!>!>! configure) -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.ConfigureDocuments(System.Action<CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder!>! configure) -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.ElasticsearchDocumentsOptions() -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.IndexPrefix.get -> string?
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.IndexPrefix.set -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.Validate() -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable<TDocument!>! documents, CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument!>! options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable<TDocument!>! documents, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IEnumerable<TDocument!>! documents, CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument!>! options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IEnumerable<TDocument!>! documents, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.DeleteAsync(string! documentId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.ElasticsearchDocumentStore(Elastic.Clients.Elasticsearch.ElasticsearchClient! client, CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver! documentModelResolver) -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.GetAsync(string! documentId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument!>!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.IndexAsync(TDocument! document, string? documentId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument!>! request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument!>!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentStore<TDocument>.UpdatePartialAsync<TPartialDocument>(string! documentId, TPartialDocument! partialDocument, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute.ElasticsearchIndexNameAttribute(string! name) -> void
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameAttribute.Name.get -> string!
+CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable<TDocument!>! documents, CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument!>! options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable<TDocument!>! documents, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IEnumerable<TDocument!>! documents, CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument!>! options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IEnumerable<TDocument!>! documents, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.DeleteAsync(string! documentId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.GetAsync(string! documentId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument!>!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.IndexAsync(TDocument! document, string? documentId = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument!>! request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument!>!>!
+CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdatePartialAsync<TPartialDocument>(string! documentId, TPartialDocument! partialDocument, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult!>!
+CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver
+CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve(System.Type! documentType) -> string!
+CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver.Resolve<TDocument>() -> string!
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.AddedIndexName.get -> string!
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.AddedIndexName.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.AliasName.get -> string!
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.AliasName.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.AliasSwitchResult() -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.ErrorReason.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.ErrorReason.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.ErrorType.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.ErrorType.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.IsSuccessful.get -> bool
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.IsSuccessful.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.RemovedIndexNames.get -> System.Collections.Generic.IReadOnlyList<string!>!
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.RemovedIndexNames.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.ResponseSummary.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.ResponseSummary.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.StatusCode.get -> int?
+CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult.StatusCode.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher
+CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher.ElasticsearchAliasSwitcher(Elastic.Clients.Elasticsearch.ElasticsearchClient! client) -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchAliasSwitcher.SwitchAsync(string! aliasName, string! newIndexName, System.Collections.Generic.IEnumerable<string!>? oldIndexNames = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult!>!
+CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer<TDocument>
+CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer<TDocument>.ElasticsearchIndexInitializer(Elastic.Clients.Elasticsearch.ElasticsearchClient! client, CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver! documentModelResolver) -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.ElasticsearchIndexInitializer<TDocument>.InitializeAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult!>!
+CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher
+CloudyWing.ElasticsearchDocumentKit.Indexing.IElasticsearchAliasSwitcher.SwitchAsync(string! aliasName, string! newIndexName, System.Collections.Generic.IEnumerable<string!>? oldIndexNames = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Indexing.AliasSwitchResult!>!
+CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer<TDocument>
+CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer<TDocument>.InitializeAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult!>!
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.AlreadyExists.get -> bool
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.AlreadyExists.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.Created.get -> bool
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.Created.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.ErrorReason.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.ErrorReason.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.ErrorType.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.ErrorType.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.IndexInitializationResult() -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.IndexName.get -> string!
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.IndexName.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.IsSuccessful.get -> bool
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.IsSuccessful.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.ResponseSummary.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.ResponseSummary.init -> void
+CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver
+CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.DefaultElasticsearchDocumentModelResolver(CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions? options = null, CloudyWing.ElasticsearchDocumentKit.IIndexNameResolver? indexNameResolver = null) -> void
+CloudyWing.ElasticsearchDocumentKit.Modeling.DefaultElasticsearchDocumentModelResolver.Resolve<TDocument>() -> CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>.ConfigureIndex.get -> System.Action<Elastic.Clients.Elasticsearch.IndexManagement.CreateIndexRequestDescriptor<TDocument!>>?
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>.ElasticsearchDocumentModel(string! indexName, System.Func<TDocument!, string?>? idSelector = null, System.Action<Elastic.Clients.Elasticsearch.IndexManagement.CreateIndexRequestDescriptor<TDocument!>>? configureIndex = null) -> void
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>.IdSelector.get -> System.Func<TDocument!, string?>?
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument>.IndexName.get -> string!
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder.Document<TDocument>() -> CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument>
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument>.ConfigureIndex(System.Action<Elastic.Clients.Elasticsearch.IndexManagement.CreateIndexRequestDescriptor<TDocument!>>! configureIndex) -> CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument>.ConfigureMapping(System.Action<Elastic.Clients.Elasticsearch.Mapping.TypeMappingDescriptor<TDocument!>>! configureMapping) -> CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument>.HasId(System.Func<TDocument!, string?>! idSelector) -> CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument>.ToIndex(string! indexName) -> CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModelBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver
+CloudyWing.ElasticsearchDocumentKit.Modeling.IElasticsearchDocumentModelResolver.Resolve<TDocument>() -> CloudyWing.ElasticsearchDocumentKit.Modeling.ElasticsearchDocumentModel<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Build() -> System.Collections.Generic.IReadOnlyList<System.Action<Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor<TDocument!>>!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.ContainsKeyword(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, string? value, bool caseInsensitive = false, string! suffix = "keyword") -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.DateRange(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, System.DateTimeOffset? greaterThanOrEqualTo = null, System.DateTimeOffset? lessThanOrEqualTo = null) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.ElasticsearchQueryFilterBuilder() -> void
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Exists(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, bool condition = true) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.GeoPolygonWithin(string! fieldName, System.Collections.Generic.IEnumerable<(double Longitude, double Latitude)>? coordinates) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.MustNot(System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!>! configure) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.NumberRange(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, double? greaterThanOrEqualTo = null, double? lessThanOrEqualTo = null) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Raw(System.Action<Elastic.Clients.Elasticsearch.QueryDsl.QueryDescriptor<TDocument!>>! configureQuery) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.RegexpKeyword(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, string? pattern, string! suffix = "keyword") -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Should(System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!>! configure) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Term(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, object? value) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.TermKeyword(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, string? value, string! suffix = "keyword") -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.Terms(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, System.Collections.Generic.IEnumerable<object?>? values) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.TermsKeyword(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, System.Collections.Generic.IEnumerable<string?>? values, string! suffix = "keyword") -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.When(bool condition, System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!>! configure) -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.WildcardKeyword(System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>! field, string? pattern, bool caseInsensitive = false, string! suffix = "keyword") -> CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.Documents.get -> System.Collections.Generic.IReadOnlyList<TDocument!>!
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.Documents.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.ErrorReason.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.ErrorReason.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.ErrorType.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.ErrorType.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.IsSuccessful.get -> bool
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.IsSuccessful.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.NextSearchAfter.get -> System.Collections.Generic.IReadOnlyList<Elastic.Clients.Elasticsearch.FieldValue>!
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.NextSearchAfter.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.ResponseSummary.get -> string?
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.ResponseSummary.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.SearchAfterPage() -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.TotalCount.get -> long
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>.TotalCount.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.ConfigureSearch.get -> System.Action<Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!>>?
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.ConfigureSearch.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.SearchAfter.get -> System.Collections.Generic.IReadOnlyList<Elastic.Clients.Elasticsearch.FieldValue>!
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.SearchAfter.init -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.SearchAfterRequest() -> void
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.Size.get -> int
+CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.Size.init -> void
+const CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions.OptionsName = "ElasticsearchDocuments" -> string!
+const CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySourceName = "CloudyWing.ElasticsearchDocumentKit" -> string!
+const CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator.MaxIndexNameByteLength = 255 -> int
+const CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>.KeywordSuffix = "keyword" -> string!
+static CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsServiceCollectionExtensions.AddElasticsearchDocuments(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, System.Action<CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsOptions!>? configure = null) -> Microsoft.Extensions.DependencyInjection.IServiceCollection!
+static CloudyWing.ElasticsearchDocumentKit.ElasticsearchDocumentsTelemetry.ActivitySource.get -> System.Diagnostics.ActivitySource!
+static CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator.IsValid(string? indexName) -> bool
+static CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator.TryGetValidationError(string? indexName, out string? errorMessage) -> bool
+static CloudyWing.ElasticsearchDocumentKit.ElasticsearchIndexNameValidator.Validate(string? indexName, string? paramName = null) -> void
+static CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix(string! baseName, System.DateTimeOffset date, string! format = "yyyyMMdd") -> string!
+static CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix(string! baseName, string! version) -> string!
+static CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.DisableSource<TDocument>(this Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!> descriptor) -> Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!>
+static CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.QueryFilters<TDocument>(this Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!> descriptor, System.Action<CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument!>!>! configure) -> Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!>
+static CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceExcludes<TDocument>(this Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!> descriptor, params System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>![]! fields) -> Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!>
+static CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchSearchRequestDescriptorExtensions.SourceIncludes<TDocument>(this Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!> descriptor, params System.Linq.Expressions.Expression<System.Func<TDocument!, object?>!>![]! fields) -> Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument!>

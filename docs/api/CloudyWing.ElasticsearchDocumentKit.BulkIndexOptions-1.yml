@@ -1,0 +1,756 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  id: BulkIndexOptions`1
+  parent: CloudyWing.ElasticsearchDocumentKit
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector
+  - CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.ChunkSize
+  - CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.DeadLetterCallback
+  - CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts
+  - CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.RetryDelayProvider
+  - CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.Validate
+  langs:
+  - csharp
+  - vb
+  name: BulkIndexOptions<TDocument>
+  nameWithType: BulkIndexOptions<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: BulkIndexOptions
+    path: ../src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+    startLine: 6
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 表示 bulk 寫入的進階設定。
+  example: []
+  syntax:
+    content: 'public sealed class BulkIndexOptions<TDocument> where TDocument : class'
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    content.vb: Public NotInheritable Class BulkIndexOptions(Of TDocument As Class)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: BulkIndexOptions(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument)
+  name.vb: BulkIndexOptions(Of TDocument)
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.ChunkSize
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.ChunkSize
+  id: ChunkSize
+  parent: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  langs:
+  - csharp
+  - vb
+  name: ChunkSize
+  nameWithType: BulkIndexOptions<TDocument>.ChunkSize
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.ChunkSize
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ChunkSize
+    path: ../src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+    startLine: 12
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定每批寫入筆數。
+  example: []
+  syntax:
+    content: public int ChunkSize { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: 每批寫入筆數。預設為 500。
+    content.vb: Public Property ChunkSize As Integer
+  overload: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.ChunkSize*
+  nameWithType.vb: BulkIndexOptions(Of TDocument).ChunkSize
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).ChunkSize
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts
+  id: MaxRetryAttempts
+  parent: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  langs:
+  - csharp
+  - vb
+  name: MaxRetryAttempts
+  nameWithType: BulkIndexOptions<TDocument>.MaxRetryAttempts
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.MaxRetryAttempts
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: MaxRetryAttempts
+    path: ../src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+    startLine: 18
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定整批請求失敗時的重試次數。
+  example: []
+  syntax:
+    content: public int MaxRetryAttempts { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: 重試次數。預設為 0。
+    content.vb: Public Property MaxRetryAttempts As Integer
+  overload: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts*
+  nameWithType.vb: BulkIndexOptions(Of TDocument).MaxRetryAttempts
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).MaxRetryAttempts
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.RetryDelayProvider
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.RetryDelayProvider
+  id: RetryDelayProvider
+  parent: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  langs:
+  - csharp
+  - vb
+  name: RetryDelayProvider
+  nameWithType: BulkIndexOptions<TDocument>.RetryDelayProvider
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.RetryDelayProvider
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: RetryDelayProvider
+    path: ../src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+    startLine: 24
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定重試等待時間計算方式。
+  example: []
+  syntax:
+    content: public Func<int, TimeSpan>? RetryDelayProvider { get; init; }
+    parameters: []
+    return:
+      type: System.Func{System.Int32,System.TimeSpan}
+      description: 輸入值為目前重試次數，從 1 開始。未設定時使用 200ms 乘以重試次數。
+    content.vb: Public Property RetryDelayProvider As Func(Of Integer, TimeSpan)
+  overload: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.RetryDelayProvider*
+  nameWithType.vb: BulkIndexOptions(Of TDocument).RetryDelayProvider
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).RetryDelayProvider
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.DeadLetterCallback
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.DeadLetterCallback
+  id: DeadLetterCallback
+  parent: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  langs:
+  - csharp
+  - vb
+  name: DeadLetterCallback
+  nameWithType: BulkIndexOptions<TDocument>.DeadLetterCallback
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.DeadLetterCallback
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DeadLetterCallback
+    path: ../src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+    startLine: 29
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定單筆寫入失敗時的 dead-letter callback。
+  example: []
+  syntax:
+    content: public Func<BulkDeadLetter<TDocument>, CancellationToken, Task>? DeadLetterCallback { get; init; }
+    parameters: []
+    return:
+      type: System.Func{CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter{{TDocument}},System.Threading.CancellationToken,System.Threading.Tasks.Task}
+    content.vb: Public Property DeadLetterCallback As Func(Of BulkDeadLetter(Of TDocument), CancellationToken, Task)
+  overload: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.DeadLetterCallback*
+  nameWithType.vb: BulkIndexOptions(Of TDocument).DeadLetterCallback
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).DeadLetterCallback
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector
+  id: AllowRetryWithoutIdSelector
+  parent: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  langs:
+  - csharp
+  - vb
+  name: AllowRetryWithoutIdSelector
+  nameWithType: BulkIndexOptions<TDocument>.AllowRetryWithoutIdSelector
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.AllowRetryWithoutIdSelector
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: AllowRetryWithoutIdSelector
+    path: ../src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+    startLine: 38
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 取得或設定一個值，用以指出是否允許在文件模型未設定 IdSelector 時啟用重試。
+  example: []
+  syntax:
+    content: public bool AllowRetryWithoutIdSelector { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: >-
+        若要在未設定 IdSelector 時仍允許重試，則為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>；否則為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。預設為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>。
+
+        未設定 IdSelector 而重試時，沒有固定 _id 的文件可能因整批重送而重複寫入，僅適用於可接受 at-least-once 的呼叫端。
+    content.vb: Public Property AllowRetryWithoutIdSelector As Boolean
+  overload: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector*
+  nameWithType.vb: BulkIndexOptions(Of TDocument).AllowRetryWithoutIdSelector
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).AllowRetryWithoutIdSelector
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.Validate
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.Validate
+  id: Validate
+  parent: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: BulkIndexOptions<TDocument>.Validate()
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.Validate()
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Validate
+    path: ../src/ElasticsearchDocumentKit/BulkIndexOptions.cs
+    startLine: 44
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 驗證目前設定是否可用。
+  example: []
+  syntax:
+    content: public void Validate()
+    content.vb: Public Sub Validate()
+  overload: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.Validate*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: 設定值不符合工具庫需求時。
+  nameWithType.vb: BulkIndexOptions(Of TDocument).Validate()
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).Validate()
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.ChunkSize*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.ChunkSize
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_ChunkSize
+  name: ChunkSize
+  nameWithType: BulkIndexOptions<TDocument>.ChunkSize
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.ChunkSize
+  nameWithType.vb: BulkIndexOptions(Of TDocument).ChunkSize
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).ChunkSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_MaxRetryAttempts
+  name: MaxRetryAttempts
+  nameWithType: BulkIndexOptions<TDocument>.MaxRetryAttempts
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.MaxRetryAttempts
+  nameWithType.vb: BulkIndexOptions(Of TDocument).MaxRetryAttempts
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).MaxRetryAttempts
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.RetryDelayProvider*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.RetryDelayProvider
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_RetryDelayProvider
+  name: RetryDelayProvider
+  nameWithType: BulkIndexOptions<TDocument>.RetryDelayProvider
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.RetryDelayProvider
+  nameWithType.vb: BulkIndexOptions(Of TDocument).RetryDelayProvider
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).RetryDelayProvider
+- uid: System.Func{System.Int32,System.TimeSpan}
+  commentId: T:System.Func{System.Int32,System.TimeSpan}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<int, TimeSpan>
+  nameWithType: Func<int, TimeSpan>
+  fullName: System.Func<int, System.TimeSpan>
+  nameWithType.vb: Func(Of Integer, TimeSpan)
+  fullName.vb: System.Func(Of Integer, System.TimeSpan)
+  name.vb: Func(Of Integer, TimeSpan)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.DeadLetterCallback*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.DeadLetterCallback
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_DeadLetterCallback
+  name: DeadLetterCallback
+  nameWithType: BulkIndexOptions<TDocument>.DeadLetterCallback
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.DeadLetterCallback
+  nameWithType.vb: BulkIndexOptions(Of TDocument).DeadLetterCallback
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).DeadLetterCallback
+- uid: System.Func{CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter{{TDocument}},System.Threading.CancellationToken,System.Threading.Tasks.Task}
+  commentId: T:System.Func{CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<BulkDeadLetter<TDocument>, CancellationToken, Task>
+  nameWithType: Func<BulkDeadLetter<TDocument>, CancellationToken, Task>
+  fullName: System.Func<CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter<TDocument>, System.Threading.CancellationToken, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of BulkDeadLetter(Of TDocument), CancellationToken, Task)
+  fullName.vb: System.Func(Of CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter(Of TDocument), System.Threading.CancellationToken, System.Threading.Tasks.Task)
+  name.vb: Func(Of BulkDeadLetter(Of TDocument), CancellationToken, Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+    name: BulkDeadLetter
+    href: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter`1
+    name: BulkDeadLetter
+    href: CloudyWing.ElasticsearchDocumentKit.BulkDeadLetter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_AllowRetryWithoutIdSelector
+  name: AllowRetryWithoutIdSelector
+  nameWithType: BulkIndexOptions<TDocument>.AllowRetryWithoutIdSelector
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.AllowRetryWithoutIdSelector
+  nameWithType.vb: BulkIndexOptions(Of TDocument).AllowRetryWithoutIdSelector
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).AllowRetryWithoutIdSelector
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.Validate*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.Validate
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_Validate
+  name: Validate
+  nameWithType: BulkIndexOptions<TDocument>.Validate
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.Validate
+  nameWithType.vb: BulkIndexOptions(Of TDocument).Validate
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).Validate

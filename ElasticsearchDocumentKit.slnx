@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ElasticsearchDocumentKit/ElasticsearchDocumentKit.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ElasticsearchDocumentKit.Tests.Testcontainers/ElasticsearchDocumentKit.Tests.Testcontainers.csproj" />
+    <Project Path="tests/ElasticsearchDocumentKit.Tests/ElasticsearchDocumentKit.Tests.csproj" />
+  </Folder>
+</Solution>

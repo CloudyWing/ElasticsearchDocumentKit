@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Search
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Search
+  id: CloudyWing.ElasticsearchDocumentKit.Search
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+  - CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+  - CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+  - CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+  - CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+  - CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  langs:
+  - csharp
+  - vb
+  name: CloudyWing.ElasticsearchDocumentKit.Search
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Search
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search
+  type: Namespace
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  name: DocumentPageRequest<TDocument>
+  nameWithType: DocumentPageRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest<TDocument>
+  nameWithType.vb: DocumentPageRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest(Of TDocument)
+  name.vb: DocumentPageRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+    name: DocumentPageRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+    name: DocumentPageRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult-1.html
+  name: DocumentPageResult<TDocument>
+  nameWithType: DocumentPageResult<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult<TDocument>
+  nameWithType.vb: DocumentPageResult(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult(Of TDocument)
+  name.vb: DocumentPageResult(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+    name: DocumentPageResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+    name: DocumentPageResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  name: DocumentSearchRequest<TDocument>
+  nameWithType: DocumentSearchRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest<TDocument>
+  nameWithType.vb: DocumentSearchRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest(Of TDocument)
+  name.vb: DocumentSearchRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+    name: DocumentSearchRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+    name: DocumentSearchRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult-1.html
+  name: DocumentSearchResult<TDocument>
+  nameWithType: DocumentSearchResult<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult<TDocument>
+  nameWithType.vb: DocumentSearchResult(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult(Of TDocument)
+  name.vb: DocumentSearchResult(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+    name: DocumentSearchResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+    name: DocumentSearchResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage-1.html
+  name: SearchAfterPage<TDocument>
+  nameWithType: SearchAfterPage<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>
+  nameWithType.vb: SearchAfterPage(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage(Of TDocument)
+  name.vb: SearchAfterPage(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+    name: SearchAfterPage
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+    name: SearchAfterPage
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  name: SearchAfterRequest<TDocument>
+  nameWithType: SearchAfterRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>
+  nameWithType.vb: SearchAfterRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument)
+  name.vb: SearchAfterRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )

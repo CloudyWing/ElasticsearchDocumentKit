@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  id: SearchAfterRequest`1
+  parent: CloudyWing.ElasticsearchDocumentKit.Search
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.ConfigureSearch
+  - CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.SearchAfter
+  - CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.Size
+  langs:
+  - csharp
+  - vb
+  name: SearchAfterRequest<TDocument>
+  nameWithType: SearchAfterRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SearchAfterRequest
+    path: ../src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+    startLine: 8
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Search
+  summary: 表示 search-after 分頁查詢設定。
+  example: []
+  syntax:
+    content: 'public sealed class SearchAfterRequest<TDocument> where TDocument : class'
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    content.vb: Public NotInheritable Class SearchAfterRequest(Of TDocument As Class)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: SearchAfterRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument)
+  name.vb: SearchAfterRequest(Of TDocument)
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.Size
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.Size
+  id: Size
+  parent: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: SearchAfterRequest<TDocument>.Size
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.Size
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: Size
+    path: ../src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+    startLine: 14
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Search
+  summary: 取得或設定單頁筆數。
+  example: []
+  syntax:
+    content: public int Size { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: 單頁筆數。預設為 100。
+    content.vb: Public Property Size As Integer
+  overload: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.Size*
+  nameWithType.vb: SearchAfterRequest(Of TDocument).Size
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument).Size
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.SearchAfter
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.SearchAfter
+  id: SearchAfter
+  parent: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  langs:
+  - csharp
+  - vb
+  name: SearchAfter
+  nameWithType: SearchAfterRequest<TDocument>.SearchAfter
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.SearchAfter
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SearchAfter
+    path: ../src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+    startLine: 20
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Search
+  summary: 取得或設定前一頁最後一筆 hit 的排序值。
+  example: []
+  syntax:
+    content: public IReadOnlyList<FieldValue> SearchAfter { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Elastic.Clients.Elasticsearch.FieldValue}
+      description: 排序值順序必須與 search request 的 sort 設定一致。
+    content.vb: Public Property SearchAfter As IReadOnlyList(Of FieldValue)
+  overload: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.SearchAfter*
+  nameWithType.vb: SearchAfterRequest(Of TDocument).SearchAfter
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument).SearchAfter
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.ConfigureSearch
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.ConfigureSearch
+  id: ConfigureSearch
+  parent: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigureSearch
+  nameWithType: SearchAfterRequest<TDocument>.ConfigureSearch
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.ConfigureSearch
+  type: Property
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: ConfigureSearch
+    path: ../src/ElasticsearchDocumentKit/Search/SearchAfterRequest.cs
+    startLine: 26
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Search
+  summary: 取得或設定官方 search descriptor 設定動作。
+  example: []
+  syntax:
+    content: public Action<SearchRequestDescriptor<TDocument>>? ConfigureSearch { get; init; }
+    parameters: []
+    return:
+      type: System.Action{Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}}
+      description: 查詢條件與排序設定；排序必須穩定才能正確使用 search-after。
+    content.vb: Public Property ConfigureSearch As Action(Of SearchRequestDescriptor(Of TDocument))
+  overload: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.ConfigureSearch*
+  nameWithType.vb: SearchAfterRequest(Of TDocument).ConfigureSearch
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument).ConfigureSearch
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Search
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Search
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Search
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Search
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search
+    name: Search
+    href: CloudyWing.ElasticsearchDocumentKit.Search.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search
+    name: Search
+    href: CloudyWing.ElasticsearchDocumentKit.Search.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.Size*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.Size
+  href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html#CloudyWing_ElasticsearchDocumentKit_Search_SearchAfterRequest_1_Size
+  name: Size
+  nameWithType: SearchAfterRequest<TDocument>.Size
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.Size
+  nameWithType.vb: SearchAfterRequest(Of TDocument).Size
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument).Size
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.SearchAfter*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.SearchAfter
+  href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html#CloudyWing_ElasticsearchDocumentKit_Search_SearchAfterRequest_1_SearchAfter
+  name: SearchAfter
+  nameWithType: SearchAfterRequest<TDocument>.SearchAfter
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.SearchAfter
+  nameWithType.vb: SearchAfterRequest(Of TDocument).SearchAfter
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument).SearchAfter
+- uid: System.Collections.Generic.IReadOnlyList{Elastic.Clients.Elasticsearch.FieldValue}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Elastic.Clients.Elasticsearch.FieldValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<FieldValue>
+  nameWithType: IReadOnlyList<FieldValue>
+  fullName: System.Collections.Generic.IReadOnlyList<Elastic.Clients.Elasticsearch.FieldValue>
+  nameWithType.vb: IReadOnlyList(Of FieldValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Elastic.Clients.Elasticsearch.FieldValue)
+  name.vb: IReadOnlyList(Of FieldValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Elastic.Clients.Elasticsearch.FieldValue
+    name: FieldValue
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Elastic.Clients.Elasticsearch.FieldValue
+    name: FieldValue
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.ConfigureSearch*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1.ConfigureSearch
+  href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html#CloudyWing_ElasticsearchDocumentKit_Search_SearchAfterRequest_1_ConfigureSearch
+  name: ConfigureSearch
+  nameWithType: SearchAfterRequest<TDocument>.ConfigureSearch
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>.ConfigureSearch
+  nameWithType.vb: SearchAfterRequest(Of TDocument).ConfigureSearch
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument).ConfigureSearch
+- uid: System.Action{Elastic.Clients.Elasticsearch.SearchRequestDescriptor{{TDocument}}}
+  commentId: T:System.Action{Elastic.Clients.Elasticsearch.SearchRequestDescriptor{`0}}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<SearchRequestDescriptor<TDocument>>
+  nameWithType: Action<SearchRequestDescriptor<TDocument>>
+  fullName: System.Action<Elastic.Clients.Elasticsearch.SearchRequestDescriptor<TDocument>>
+  nameWithType.vb: Action(Of SearchRequestDescriptor(Of TDocument))
+  fullName.vb: System.Action(Of Elastic.Clients.Elasticsearch.SearchRequestDescriptor(Of TDocument))
+  name.vb: Action(Of SearchRequestDescriptor(Of TDocument))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+    name: SearchRequestDescriptor
+    isExternal: true
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Elastic.Clients.Elasticsearch.SearchRequestDescriptor`1
+    name: SearchRequestDescriptor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

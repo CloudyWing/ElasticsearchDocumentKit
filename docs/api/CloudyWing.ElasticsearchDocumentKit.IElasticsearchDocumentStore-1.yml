@@ -1,0 +1,2379 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  id: IElasticsearchDocumentStore`1
+  parent: CloudyWing.ElasticsearchDocumentKit
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CountAsync(CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CreateAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync(System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteByQueryAsync(CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.GetAsync(System.String,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync(`0,System.String,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchPageAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByQueryAsync(CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest{`0},System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByScriptAsync(System.String,Elastic.Clients.Elasticsearch.Script,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync``1(System.String,``0,CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions,System.Threading.CancellationToken)
+  - CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync``1(System.String,``0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IElasticsearchDocumentStore<TDocument>
+  nameWithType: IElasticsearchDocumentStore<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>
+  type: Interface
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IElasticsearchDocumentStore
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 10
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 提供指定文件型別的常見 Elasticsearch 文件操作。
+  example: []
+  syntax:
+    content: 'public interface IElasticsearchDocumentStore<TDocument> where TDocument : class'
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    content.vb: Public Interface IElasticsearchDocumentStore(Of TDocument As Class)
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument)
+  name.vb: IElasticsearchDocumentStore(Of TDocument)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync(`0,System.String,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync(`0,System.String,System.Threading.CancellationToken)
+  id: IndexAsync(`0,System.String,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: IndexAsync(TDocument, string?, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.IndexAsync(TDocument, string?, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.IndexAsync(TDocument, string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IndexAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 19
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 建立或覆寫單筆文件。
+  example: []
+  syntax:
+    content: Task<DocumentOperationResult> IndexAsync(TDocument document, string? documentId = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: document
+      type: '{TDocument}'
+      description: 文件內容。
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。
+    content.vb: Function IndexAsync(document As TDocument, documentId As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync*
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).IndexAsync(TDocument, String, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).IndexAsync(TDocument, String, System.Threading.CancellationToken)
+  name.vb: IndexAsync(TDocument, String, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions,System.Threading.CancellationToken)
+  id: IndexAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: IndexAsync(TDocument, string?, IndexDocumentOptions, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.IndexAsync(TDocument, string?, IndexDocumentOptions, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.IndexAsync(TDocument, string?, CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IndexAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 37
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依指定選項建立或覆寫單筆文件。
+  example: []
+  syntax:
+    content: Task<DocumentOperationResult> IndexAsync(TDocument document, string? documentId, IndexDocumentOptions options, CancellationToken cancellationToken = default)
+    parameters:
+    - id: document
+      type: '{TDocument}'
+      description: 文件內容。
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+      description: 單筆寫入選項，可設定 refresh 與樂觀並行控制。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。
+    content.vb: Function IndexAsync(document As TDocument, documentId As String, options As IndexDocumentOptions, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">document</code> 或 <code class="paramref">options</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: <code class="paramref">options</code> 的設定組合不合法。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).IndexAsync(TDocument, String, IndexDocumentOptions, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).IndexAsync(TDocument, String, CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions, System.Threading.CancellationToken)
+  name.vb: IndexAsync(TDocument, String, IndexDocumentOptions, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CreateAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CreateAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  id: CreateAsync(`0,System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(TDocument, string?, DocumentWriteOptions?, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.CreateAsync(TDocument, string?, DocumentWriteOptions?, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.CreateAsync(TDocument, string?, CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: CreateAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 53
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 建立單筆文件，文件 ID 已存在時不覆寫。
+  example: []
+  syntax:
+    content: Task<DocumentOperationResult> CreateAsync(TDocument document, string? documentId = null, DocumentWriteOptions? options = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: document
+      type: '{TDocument}'
+      description: 文件內容。
+    - id: documentId
+      type: System.String
+      description: 文件 ID；未設定時使用文件模型的 IdSelector，兩者皆無值時由 Elasticsearch 自動產生。
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+      description: 單筆寫入選項，可設定 refresh。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。文件 ID 已存在時 <xref href="CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IsSuccessful" data-throw-if-not-resolved="false"></xref> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>，狀態碼為 409。
+    content.vb: Function CreateAsync(document As TDocument, documentId As String = Nothing, options As DocumentWriteOptions = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CreateAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">document</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).CreateAsync(TDocument, String, DocumentWriteOptions, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).CreateAsync(TDocument, String, CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions, System.Threading.CancellationToken)
+  name.vb: CreateAsync(TDocument, String, DocumentWriteOptions, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.DeleteAsync(string, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.DeleteAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DeleteAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 66
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 刪除單筆文件。
+  example: []
+  syntax:
+    content: Task<DocumentOperationResult> DeleteAsync(string documentId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。
+    content.vb: Function DeleteAsync(documentId As String, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync*
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).DeleteAsync(String, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).DeleteAsync(String, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync(System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync(System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string, DocumentWriteOptions, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.DeleteAsync(string, DocumentWriteOptions, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.DeleteAsync(string, CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DeleteAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 80
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依指定選項刪除單筆文件。
+  example: []
+  syntax:
+    content: Task<DocumentOperationResult> DeleteAsync(string documentId, DocumentWriteOptions options, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+      description: 單筆寫入選項，可設定 refresh。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。
+    content.vb: Function DeleteAsync(documentId As String, options As DocumentWriteOptions, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">documentId</code> 為空白字串。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">options</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).DeleteAsync(String, DocumentWriteOptions, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).DeleteAsync(String, CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, DocumentWriteOptions, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(string, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.GetAsync(string, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.GetAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: GetAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 92
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 讀取單筆文件。
+  example: []
+  syntax:
+    content: Task<DocumentGetResult<TDocument>> GetAsync(string documentId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentGetResult{{TDocument}}}
+      description: 文件讀取結果。
+    content.vb: Function GetAsync(documentId As String, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentGetResult(Of TDocument))
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.GetAsync*
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).GetAsync(String, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).GetAsync(String, System.Threading.CancellationToken)
+  name.vb: GetAsync(String, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync``1(System.String,``0,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync``1(System.String,``0,System.Threading.CancellationToken)
+  id: UpdatePartialAsync``1(System.String,``0,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: UpdatePartialAsync<TPartialDocument>(string, TPartialDocument, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.UpdatePartialAsync<TPartialDocument>(string, TPartialDocument, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdatePartialAsync<TPartialDocument>(string, TPartialDocument, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: UpdatePartialAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 105
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 使用 partial document 更新單筆文件。
+  example: []
+  syntax:
+    content: 'Task<DocumentOperationResult> UpdatePartialAsync<TPartialDocument>(string documentId, TPartialDocument partialDocument, CancellationToken cancellationToken = default) where TPartialDocument : class'
+    parameters:
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: partialDocument
+      type: '{TPartialDocument}'
+      description: partial document。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    typeParameters:
+    - id: TPartialDocument
+      description: partial document 型別。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。
+    content.vb: Function UpdatePartialAsync(Of TPartialDocument As Class)(documentId As String, partialDocument As TPartialDocument, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync*
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).UpdatePartialAsync(Of TPartialDocument)(String, TPartialDocument, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).UpdatePartialAsync(Of TPartialDocument)(String, TPartialDocument, System.Threading.CancellationToken)
+  name.vb: UpdatePartialAsync(Of TPartialDocument)(String, TPartialDocument, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync``1(System.String,``0,CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync``1(System.String,``0,CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions,System.Threading.CancellationToken)
+  id: UpdatePartialAsync``1(System.String,``0,CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: UpdatePartialAsync<TPartialDocument>(string, TPartialDocument, UpdateDocumentOptions, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.UpdatePartialAsync<TPartialDocument>(string, TPartialDocument, UpdateDocumentOptions, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdatePartialAsync<TPartialDocument>(string, TPartialDocument, CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: UpdatePartialAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 125
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依指定選項使用 partial document 更新單筆文件。
+  example: []
+  syntax:
+    content: 'Task<DocumentOperationResult> UpdatePartialAsync<TPartialDocument>(string documentId, TPartialDocument partialDocument, UpdateDocumentOptions options, CancellationToken cancellationToken = default) where TPartialDocument : class'
+    parameters:
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: partialDocument
+      type: '{TPartialDocument}'
+      description: partial document。
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+      description: 單筆更新選項，可設定 refresh、樂觀並行控制與衝突重試次數。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    typeParameters:
+    - id: TPartialDocument
+      description: partial document 型別。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。
+    content.vb: Function UpdatePartialAsync(Of TPartialDocument As Class)(documentId As String, partialDocument As TPartialDocument, options As UpdateDocumentOptions, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">documentId</code> 為空白字串。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">partialDocument</code> 或 <code class="paramref">options</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: <code class="paramref">options</code> 的設定組合不合法。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).UpdatePartialAsync(Of TPartialDocument)(String, TPartialDocument, UpdateDocumentOptions, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).UpdatePartialAsync(Of TPartialDocument)(String, TPartialDocument, CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions, System.Threading.CancellationToken)
+  name.vb: UpdatePartialAsync(Of TPartialDocument)(String, TPartialDocument, UpdateDocumentOptions, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByScriptAsync(System.String,Elastic.Clients.Elasticsearch.Script,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByScriptAsync(System.String,Elastic.Clients.Elasticsearch.Script,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  id: UpdateByScriptAsync(System.String,Elastic.Clients.Elasticsearch.Script,CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions,System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateByScriptAsync(string, Script, DocumentWriteOptions?, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.UpdateByScriptAsync(string, Script, DocumentWriteOptions?, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdateByScriptAsync(string, Elastic.Clients.Elasticsearch.Script, CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: UpdateByScriptAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 142
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 使用 script 更新單筆文件。
+  example: []
+  syntax:
+    content: Task<DocumentOperationResult> UpdateByScriptAsync(string documentId, Script script, DocumentWriteOptions? options = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documentId
+      type: System.String
+      description: 文件 ID。
+    - id: script
+      type: Elastic.Clients.Elasticsearch.Script
+      description: 要執行的 script，包含 source、lang 與 params 或已儲存的 script ID。
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+      description: 單筆寫入選項，可設定 refresh。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+      description: 文件操作結果。文件不存在時 <xref href="CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IsSuccessful" data-throw-if-not-resolved="false"></xref> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>，狀態碼為 404。
+    content.vb: Function UpdateByScriptAsync(documentId As String, script As Script, options As DocumentWriteOptions = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of DocumentOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByScriptAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">documentId</code> 為空白字串。
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">script</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).UpdateByScriptAsync(String, Script, DocumentWriteOptions, CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).UpdateByScriptAsync(String, Elastic.Clients.Elasticsearch.Script, CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions, System.Threading.CancellationToken)
+  name.vb: UpdateByScriptAsync(String, Script, DocumentWriteOptions, CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByQueryAsync(CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByQueryAsync(CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest{`0},System.Threading.CancellationToken)
+  id: UpdateByQueryAsync(CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateByQueryAsync(UpdateByQueryRequest<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.UpdateByQueryAsync(UpdateByQueryRequest<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdateByQueryAsync(CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: UpdateByQueryAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 168
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依條件更新符合的文件。
+  remarks: >-
+    預設等待操作完成並 refresh。若透過 <xref href="CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest%601.ConfigureRequest" data-throw-if-not-resolved="false"></xref> 覆寫為
+
+    <code>wait_for_completion=false</code>，回應只含 task，結果的計數皆為 0。
+  example: []
+  syntax:
+    content: Task<ByQueryOperationResult> UpdateByQueryAsync(UpdateByQueryRequest<TDocument> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest{{TDocument}}
+      description: update-by-query 設定。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult}
+      description: >-
+        操作結果。預設以 <code>conflicts=abort</code> 執行，遇到版本衝突時請求失敗；
+
+        可透過 <xref href="CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest%601.ConfigureRequest" data-throw-if-not-resolved="false"></xref> 設定 <code>Conflicts.Proceed</code> 改為略過衝突並計入
+
+        <xref href="CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.VersionConflicts" data-throw-if-not-resolved="false"></xref>。
+    content.vb: Function UpdateByQueryAsync(request As UpdateByQueryRequest(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of ByQueryOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByQueryAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">request</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">request</code> 的 <xref href="CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest%601.Filters" data-throw-if-not-resolved="false"></xref> 沒有任何條件，且
+
+      <xref href="CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest%601.ConfigureRequest" data-throw-if-not-resolved="false"></xref> 未指定 query。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).UpdateByQueryAsync(UpdateByQueryRequest(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).UpdateByQueryAsync(CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest(Of TDocument), System.Threading.CancellationToken)
+  name.vb: UpdateByQueryAsync(UpdateByQueryRequest(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteByQueryAsync(CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteByQueryAsync(CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest{`0},System.Threading.CancellationToken)
+  id: DeleteByQueryAsync(CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: DeleteByQueryAsync(DeleteByQueryRequest<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.DeleteByQueryAsync(DeleteByQueryRequest<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.DeleteByQueryAsync(CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: DeleteByQueryAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 192
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依條件刪除符合的文件。
+  remarks: >-
+    預設等待操作完成並 refresh。若透過 <xref href="CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest%601.ConfigureRequest" data-throw-if-not-resolved="false"></xref> 覆寫為
+
+    <code>wait_for_completion=false</code>，回應只含 task，結果的計數皆為 0。
+  example: []
+  syntax:
+    content: Task<ByQueryOperationResult> DeleteByQueryAsync(DeleteByQueryRequest<TDocument> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest{{TDocument}}
+      description: delete-by-query 設定。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult}
+      description: >-
+        操作結果。預設以 <code>conflicts=abort</code> 執行，遇到版本衝突時請求失敗；
+
+        可透過 <xref href="CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest%601.ConfigureRequest" data-throw-if-not-resolved="false"></xref> 設定 <code>Conflicts.Proceed</code> 改為略過衝突並計入
+
+        <xref href="CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.VersionConflicts" data-throw-if-not-resolved="false"></xref>。
+    content.vb: Function DeleteByQueryAsync(request As DeleteByQueryRequest(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of ByQueryOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteByQueryAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">request</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      <code class="paramref">request</code> 的 <xref href="CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest%601.Filters" data-throw-if-not-resolved="false"></xref> 沒有任何條件，且
+
+      <xref href="CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest%601.ConfigureRequest" data-throw-if-not-resolved="false"></xref> 未指定 query。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).DeleteByQueryAsync(DeleteByQueryRequest(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).DeleteByQueryAsync(CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument), System.Threading.CancellationToken)
+  name.vb: DeleteByQueryAsync(DeleteByQueryRequest(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CountAsync(CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CountAsync(CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0},System.Threading.CancellationToken)
+  id: CountAsync(CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: CountAsync(ElasticsearchQueryFilterBuilder<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.CountAsync(ElasticsearchQueryFilterBuilder<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.CountAsync(CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: CountAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 204
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依條件計算符合的文件筆數。
+  example: []
+  syntax:
+    content: Task<DocumentCountResult> CountAsync(ElasticsearchQueryFilterBuilder<TDocument> filters, CancellationToken cancellationToken = default)
+    parameters:
+    - id: filters
+      type: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{{TDocument}}
+      description: 篩選條件；沒有任何條件時計算 index 內的全部文件。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentCountResult}
+      description: 文件筆數查詢結果。
+    content.vb: Function CountAsync(filters As ElasticsearchQueryFilterBuilder(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of DocumentCountResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CountAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">filters</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).CountAsync(ElasticsearchQueryFilterBuilder(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).CountAsync(CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument), System.Threading.CancellationToken)
+  name.vb: CountAsync(ElasticsearchQueryFilterBuilder(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},System.Threading.CancellationToken)
+  id: BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: BulkIndexAsync(IEnumerable<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(IEnumerable<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IEnumerable<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: BulkIndexAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 216
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: Bulk 建立或覆寫多筆文件。
+  example: []
+  syntax:
+    content: Task<BulkOperationResult> BulkIndexAsync(IEnumerable<TDocument> documents, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documents
+      type: System.Collections.Generic.IEnumerable{{TDocument}}
+      description: 文件集合。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.BulkOperationResult}
+      description: Bulk 操作結果。
+    content.vb: Function BulkIndexAsync(documents As IEnumerable(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of BulkOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync*
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: <code class="paramref">cancellationToken</code> 已取消時。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(IEnumerable(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(System.Collections.Generic.IEnumerable(Of TDocument), System.Threading.CancellationToken)
+  name.vb: BulkIndexAsync(IEnumerable(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},System.Threading.CancellationToken)
+  id: BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: BulkIndexAsync(IAsyncEnumerable<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(IAsyncEnumerable<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: BulkIndexAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 228
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: Bulk 建立或覆寫非同步產生的多筆文件。
+  example: []
+  syntax:
+    content: Task<BulkOperationResult> BulkIndexAsync(IAsyncEnumerable<TDocument> documents, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documents
+      type: System.Collections.Generic.IAsyncEnumerable{{TDocument}}
+      description: 非同步文件集合。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.BulkOperationResult}
+      description: Bulk 操作結果。
+    content.vb: Function BulkIndexAsync(documents As IAsyncEnumerable(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of BulkOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync*
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: <code class="paramref">cancellationToken</code> 已取消時。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(IAsyncEnumerable(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable(Of TDocument), System.Threading.CancellationToken)
+  name.vb: BulkIndexAsync(IAsyncEnumerable(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  id: BulkIndexAsync(System.Collections.Generic.IEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: BulkIndexAsync(IEnumerable<TDocument>, BulkIndexOptions<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(IEnumerable<TDocument>, BulkIndexOptions<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IEnumerable<TDocument>, CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: BulkIndexAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 245
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依指定設定 Bulk 建立或覆寫多筆文件。
+  example: []
+  syntax:
+    content: Task<BulkOperationResult> BulkIndexAsync(IEnumerable<TDocument> documents, BulkIndexOptions<TDocument> options, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documents
+      type: System.Collections.Generic.IEnumerable{{TDocument}}
+      description: 文件集合。
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{{TDocument}}
+      description: Bulk 寫入設定。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.BulkOperationResult}
+      description: Bulk 操作結果。
+    content.vb: Function BulkIndexAsync(documents As IEnumerable(Of TDocument), options As BulkIndexOptions(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of BulkOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      <code class="paramref">options</code> 的設定不符合需求，或 <xref href="CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions%601.MaxRetryAttempts" data-throw-if-not-resolved="false"></xref> 大於 0 而文件模型未設定 IdSelector 且
+
+      <xref href="CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions%601.AllowRetryWithoutIdSelector" data-throw-if-not-resolved="false"></xref> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 時。
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: <code class="paramref">cancellationToken</code> 已取消時。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(IEnumerable(Of TDocument), BulkIndexOptions(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(System.Collections.Generic.IEnumerable(Of TDocument), CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument), System.Threading.CancellationToken)
+  name.vb: BulkIndexAsync(IEnumerable(Of TDocument), BulkIndexOptions(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  id: BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable{`0},CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: BulkIndexAsync(IAsyncEnumerable<TDocument>, BulkIndexOptions<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(IAsyncEnumerable<TDocument>, BulkIndexOptions<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable<TDocument>, CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: BulkIndexAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 263
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依指定設定 Bulk 建立或覆寫非同步產生的多筆文件。
+  example: []
+  syntax:
+    content: Task<BulkOperationResult> BulkIndexAsync(IAsyncEnumerable<TDocument> documents, BulkIndexOptions<TDocument> options, CancellationToken cancellationToken = default)
+    parameters:
+    - id: documents
+      type: System.Collections.Generic.IAsyncEnumerable{{TDocument}}
+      description: 非同步文件集合。
+    - id: options
+      type: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{{TDocument}}
+      description: Bulk 寫入設定。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.BulkOperationResult}
+      description: Bulk 操作結果。
+    content.vb: Function BulkIndexAsync(documents As IAsyncEnumerable(Of TDocument), options As BulkIndexOptions(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of BulkOperationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      <code class="paramref">options</code> 的設定不符合需求，或 <xref href="CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions%601.MaxRetryAttempts" data-throw-if-not-resolved="false"></xref> 大於 0 而文件模型未設定 IdSelector 且
+
+      <xref href="CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions%601.AllowRetryWithoutIdSelector" data-throw-if-not-resolved="false"></xref> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> 時。
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: <code class="paramref">cancellationToken</code> 已取消時。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(IAsyncEnumerable(Of TDocument), BulkIndexOptions(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync(System.Collections.Generic.IAsyncEnumerable(Of TDocument), CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument), System.Threading.CancellationToken)
+  name.vb: BulkIndexAsync(IAsyncEnumerable(Of TDocument), BulkIndexOptions(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest{`0},System.Threading.CancellationToken)
+  id: SearchAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: SearchAsync(DocumentSearchRequest<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.SearchAsync(DocumentSearchRequest<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SearchAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 279
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依條件查詢文件。
+  example: []
+  syntax:
+    content: Task<DocumentSearchResult<TDocument>> SearchAsync(DocumentSearchRequest<TDocument> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest{{TDocument}}
+      description: 查詢設定。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult{{TDocument}}}
+      description: 查詢結果。未設定 <xref href="CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest%601.Size" data-throw-if-not-resolved="false"></xref> 時由 Elasticsearch 使用預設筆數（10 筆）。
+    content.vb: Function SearchAsync(request As DocumentSearchRequest(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of DocumentSearchResult(Of TDocument))
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">request</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <xref href="CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest%601.Size" data-throw-if-not-resolved="false"></xref> 有設定且小於 1。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).SearchAsync(DocumentSearchRequest(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).SearchAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest(Of TDocument), System.Threading.CancellationToken)
+  name.vb: SearchAsync(DocumentSearchRequest(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchPageAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchPageAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest{`0},System.Threading.CancellationToken)
+  id: SearchPageAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: SearchPageAsync(DocumentPageRequest<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.SearchPageAsync(DocumentPageRequest<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchPageAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SearchPageAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 302
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依 from/size 方式查詢指定頁的文件，並回傳符合條件的總筆數。
+  remarks: >-
+    不同頁之間不保證查詢同一份快照，查詢期間資料異動可能造成重複或遺漏。需要深度分頁時改用
+
+    <xref href="CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore%601.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest%7b%600%7d%2cSystem.Threading.CancellationToken)" data-throw-if-not-resolved="false"></xref>。
+  example: []
+  syntax:
+    content: Task<DocumentPageResult<TDocument>> SearchPageAsync(DocumentPageRequest<TDocument> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest{{TDocument}}
+      description: 分頁查詢設定。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult{{TDocument}}}
+      description: >-
+        分頁查詢結果。頁碼超出範圍時為成功結果、空文件集合與實際總筆數；
+
+        <code>from + size</code> 超過 Elasticsearch 的 <code>index.max_result_window</code> 時為失敗結果。
+    content.vb: Function SearchPageAsync(request As DocumentPageRequest(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of DocumentPageResult(Of TDocument))
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchPageAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">request</code> 為 <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>。
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      <xref href="CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest%601.PageNumber" data-throw-if-not-resolved="false"></xref> 或 <xref href="CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest%601.PageSize" data-throw-if-not-resolved="false"></xref>
+
+      小於 1，或略過筆數 <code>(PageNumber - 1) * PageSize</code> 超過 <xref href="System.Int32.MaxValue" data-throw-if-not-resolved="false"></xref>。
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).SearchPageAsync(DocumentPageRequest(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).SearchPageAsync(CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest(Of TDocument), System.Threading.CancellationToken)
+  name.vb: SearchPageAsync(DocumentPageRequest(Of TDocument), CancellationToken)
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+  id: SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1
+  langs:
+  - csharp
+  - vb
+  name: SearchAfterAsync(SearchAfterRequest<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.SearchAfterAsync(SearchAfterRequest<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: SearchAfterAsync
+    path: ../src/ElasticsearchDocumentKit/IElasticsearchDocumentStore.cs
+    startLine: 313
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit
+  summary: 依 Search-After 方式查詢下一頁文件。
+  example: []
+  syntax:
+    content: Task<SearchAfterPage<TDocument>> SearchAfterAsync(SearchAfterRequest<TDocument> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{{TDocument}}
+      description: Search-After 查詢設定。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage{{TDocument}}}
+      description: Search-After 分頁結果。
+    content.vb: Function SearchAfterAsync(request As SearchAfterRequest(Of TDocument), cancellationToken As CancellationToken = Nothing) As Task(Of SearchAfterPage(Of TDocument))
+  overload: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync*
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).SearchAfterAsync(SearchAfterRequest(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument), System.Threading.CancellationToken)
+  name.vb: SearchAfterAsync(SearchAfterRequest(Of TDocument), CancellationToken)
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit
+  commentId: N:CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit
+  nameWithType: CloudyWing.ElasticsearchDocumentKit
+  fullName: CloudyWing.ElasticsearchDocumentKit
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.IndexAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_IndexAsync__0_System_String_System_Threading_CancellationToken_
+  name: IndexAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.IndexAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.IndexAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).IndexAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).IndexAsync
+- uid: '{TDocument}'
+  commentId: '!:TDocument'
+  definition: TDocument
+  name: TDocument
+  nameWithType: TDocument
+  fullName: TDocument
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DocumentOperationResult>
+  nameWithType: Task<DocumentOperationResult>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult>
+  nameWithType.vb: Task(Of DocumentOperationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult)
+  name.vb: Task(Of DocumentOperationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+    name: DocumentOperationResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult
+    name: DocumentOperationResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.html
+  - name: )
+- uid: TDocument
+  name: TDocument
+  nameWithType: TDocument
+  fullName: TDocument
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions.html
+  name: IndexDocumentOptions
+  nameWithType: IndexDocumentOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.IndexDocumentOptions
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IsSuccessful
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IsSuccessful
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.html#CloudyWing_ElasticsearchDocumentKit_DocumentOperationResult_IsSuccessful
+  name: IsSuccessful
+  nameWithType: DocumentOperationResult.IsSuccessful
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentOperationResult.IsSuccessful
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CreateAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CreateAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_CreateAsync__0_System_String_CloudyWing_ElasticsearchDocumentKit_DocumentWriteOptions_System_Threading_CancellationToken_
+  name: CreateAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.CreateAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.CreateAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).CreateAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).CreateAsync
+- uid: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions.html
+  name: DocumentWriteOptions
+  nameWithType: DocumentWriteOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.DocumentWriteOptions
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_DeleteAsync_System_String_System_Threading_CancellationToken_
+  name: DeleteAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.DeleteAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.DeleteAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).DeleteAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).DeleteAsync
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.GetAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.GetAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_GetAsync_System_String_System_Threading_CancellationToken_
+  name: GetAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.GetAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.GetAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).GetAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).GetAsync
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentGetResult{{TDocument}}}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentGetResult{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DocumentGetResult<TDocument>>
+  nameWithType: Task<DocumentGetResult<TDocument>>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentGetResult<TDocument>>
+  nameWithType.vb: Task(Of DocumentGetResult(Of TDocument))
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.DocumentGetResult(Of TDocument))
+  name.vb: Task(Of DocumentGetResult(Of TDocument))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+    name: DocumentGetResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult`1
+    name: DocumentGetResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentGetResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdatePartialAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_UpdatePartialAsync__1_System_String___0_System_Threading_CancellationToken_
+  name: UpdatePartialAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.UpdatePartialAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdatePartialAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).UpdatePartialAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).UpdatePartialAsync
+- uid: '{TPartialDocument}'
+  commentId: '!:TPartialDocument'
+  definition: TPartialDocument
+  name: TPartialDocument
+  nameWithType: TPartialDocument
+  fullName: TPartialDocument
+- uid: TPartialDocument
+  name: TPartialDocument
+  nameWithType: TPartialDocument
+  fullName: TPartialDocument
+- uid: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+  parent: CloudyWing.ElasticsearchDocumentKit
+  href: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions.html
+  name: UpdateDocumentOptions
+  nameWithType: UpdateDocumentOptions
+  fullName: CloudyWing.ElasticsearchDocumentKit.UpdateDocumentOptions
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByScriptAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByScriptAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_UpdateByScriptAsync_System_String_Elastic_Clients_Elasticsearch_Script_CloudyWing_ElasticsearchDocumentKit_DocumentWriteOptions_System_Threading_CancellationToken_
+  name: UpdateByScriptAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.UpdateByScriptAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdateByScriptAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).UpdateByScriptAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).UpdateByScriptAsync
+- uid: Elastic.Clients.Elasticsearch.Script
+  commentId: T:Elastic.Clients.Elasticsearch.Script
+  parent: Elastic.Clients.Elasticsearch
+  isExternal: true
+  name: Script
+  nameWithType: Script
+  fullName: Elastic.Clients.Elasticsearch.Script
+- uid: Elastic.Clients.Elasticsearch
+  commentId: N:Elastic.Clients.Elasticsearch
+  isExternal: true
+  name: Elastic.Clients.Elasticsearch
+  nameWithType: Elastic.Clients.Elasticsearch
+  fullName: Elastic.Clients.Elasticsearch
+  spec.csharp:
+  - uid: Elastic
+    name: Elastic
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients
+    name: Clients
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients.Elasticsearch
+    name: Elasticsearch
+    isExternal: true
+  spec.vb:
+  - uid: Elastic
+    name: Elastic
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients
+    name: Clients
+    isExternal: true
+  - name: .
+  - uid: Elastic.Clients.Elasticsearch
+    name: Elasticsearch
+    isExternal: true
+- uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1.ConfigureRequest
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1.ConfigureRequest
+  href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_UpdateByQueryRequest_1_ConfigureRequest
+  name: ConfigureRequest
+  nameWithType: UpdateByQueryRequest<TDocument>.ConfigureRequest
+  fullName: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest<TDocument>.ConfigureRequest
+  nameWithType.vb: UpdateByQueryRequest(Of TDocument).ConfigureRequest
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest(Of TDocument).ConfigureRequest
+- uid: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.VersionConflicts
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.VersionConflicts
+  href: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.html#CloudyWing_ElasticsearchDocumentKit_ByQueryOperationResult_VersionConflicts
+  name: VersionConflicts
+  nameWithType: ByQueryOperationResult.VersionConflicts
+  fullName: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.VersionConflicts
+- uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1.Filters
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1.Filters
+  href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_UpdateByQueryRequest_1_Filters
+  name: Filters
+  nameWithType: UpdateByQueryRequest<TDocument>.Filters
+  fullName: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest<TDocument>.Filters
+  nameWithType.vb: UpdateByQueryRequest(Of TDocument).Filters
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest(Of TDocument).Filters
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByQueryAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.UpdateByQueryAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_UpdateByQueryAsync_CloudyWing_ElasticsearchDocumentKit_UpdateByQueryRequest__0__System_Threading_CancellationToken_
+  name: UpdateByQueryAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.UpdateByQueryAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.UpdateByQueryAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).UpdateByQueryAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).UpdateByQueryAsync
+- uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit
+  definition: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  name: UpdateByQueryRequest<TDocument>
+  nameWithType: UpdateByQueryRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest<TDocument>
+  nameWithType.vb: UpdateByQueryRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest(Of TDocument)
+  name.vb: UpdateByQueryRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+    name: UpdateByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+    name: UpdateByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ByQueryOperationResult>
+  nameWithType: Task<ByQueryOperationResult>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult>
+  nameWithType.vb: Task(Of ByQueryOperationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult)
+  name.vb: Task(Of ByQueryOperationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult
+    name: ByQueryOperationResult
+    href: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult
+    name: ByQueryOperationResult
+    href: CloudyWing.ElasticsearchDocumentKit.ByQueryOperationResult.html
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  name: UpdateByQueryRequest<TDocument>
+  nameWithType: UpdateByQueryRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest<TDocument>
+  nameWithType.vb: UpdateByQueryRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest(Of TDocument)
+  name.vb: UpdateByQueryRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+    name: UpdateByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest`1
+    name: UpdateByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.UpdateByQueryRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.ConfigureRequest
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest_1_ConfigureRequest
+  name: ConfigureRequest
+  nameWithType: DeleteByQueryRequest<TDocument>.ConfigureRequest
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.ConfigureRequest
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).ConfigureRequest
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).ConfigureRequest
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1.Filters
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html#CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest_1_Filters
+  name: Filters
+  nameWithType: DeleteByQueryRequest<TDocument>.Filters
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>.Filters
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument).Filters
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument).Filters
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteByQueryAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.DeleteByQueryAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_DeleteByQueryAsync_CloudyWing_ElasticsearchDocumentKit_DeleteByQueryRequest__0__System_Threading_CancellationToken_
+  name: DeleteByQueryAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.DeleteByQueryAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.DeleteByQueryAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).DeleteByQueryAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).DeleteByQueryAsync
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit
+  definition: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  name: DeleteByQueryRequest<TDocument>
+  nameWithType: DeleteByQueryRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument)
+  name.vb: DeleteByQueryRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+    name: DeleteByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+    name: DeleteByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  name: DeleteByQueryRequest<TDocument>
+  nameWithType: DeleteByQueryRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest<TDocument>
+  nameWithType.vb: DeleteByQueryRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest(Of TDocument)
+  name.vb: DeleteByQueryRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+    name: DeleteByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest`1
+    name: DeleteByQueryRequest
+    href: CloudyWing.ElasticsearchDocumentKit.DeleteByQueryRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CountAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.CountAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_CountAsync_CloudyWing_ElasticsearchDocumentKit_Querying_ElasticsearchQueryFilterBuilder__0__System_Threading_CancellationToken_
+  name: CountAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.CountAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.CountAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).CountAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).CountAsync
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying
+  definition: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  name: ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)
+  name.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentCountResult}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.DocumentCountResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DocumentCountResult>
+  nameWithType: Task<DocumentCountResult>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.DocumentCountResult>
+  nameWithType.vb: Task(Of DocumentCountResult)
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.DocumentCountResult)
+  name.vb: Task(Of DocumentCountResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+    name: DocumentCountResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult
+    name: DocumentCountResult
+    href: CloudyWing.ElasticsearchDocumentKit.DocumentCountResult.html
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+  parent: CloudyWing.ElasticsearchDocumentKit.Querying
+  href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  name: ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType: ElasticsearchQueryFilterBuilder<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder<TDocument>
+  nameWithType.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder(Of TDocument)
+  name.vb: ElasticsearchQueryFilterBuilder(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder`1
+    name: ElasticsearchQueryFilterBuilder
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.ElasticsearchQueryFilterBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Querying
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Querying
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Querying
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Querying
+  fullName: CloudyWing.ElasticsearchDocumentKit.Querying
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Querying
+    name: Querying
+    href: CloudyWing.ElasticsearchDocumentKit.Querying.html
+- uid: System.OperationCanceledException
+  commentId: T:System.OperationCanceledException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.operationcanceledexception
+  name: OperationCanceledException
+  nameWithType: OperationCanceledException
+  fullName: System.OperationCanceledException
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.BulkIndexAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_BulkIndexAsync_System_Collections_Generic_IEnumerable__0__System_Threading_CancellationToken_
+  name: BulkIndexAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.BulkIndexAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.BulkIndexAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).BulkIndexAsync
+- uid: System.Collections.Generic.IEnumerable{{TDocument}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TDocument>
+  nameWithType: IEnumerable<TDocument>
+  fullName: System.Collections.Generic.IEnumerable<TDocument>
+  nameWithType.vb: IEnumerable(Of TDocument)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TDocument)
+  name.vb: IEnumerable(Of TDocument)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.BulkOperationResult}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.BulkOperationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<BulkOperationResult>
+  nameWithType: Task<BulkOperationResult>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.BulkOperationResult>
+  nameWithType.vb: Task(Of BulkOperationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.BulkOperationResult)
+  name.vb: Task(Of BulkOperationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+    name: BulkOperationResult
+    href: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult
+    name: BulkOperationResult
+    href: CloudyWing.ElasticsearchDocumentKit.BulkOperationResult.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IAsyncEnumerable{{TDocument}}
+  commentId: T:System.Collections.Generic.IAsyncEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IAsyncEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  name: IAsyncEnumerable<TDocument>
+  nameWithType: IAsyncEnumerable<TDocument>
+  fullName: System.Collections.Generic.IAsyncEnumerable<TDocument>
+  nameWithType.vb: IAsyncEnumerable(Of TDocument)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of TDocument)
+  name.vb: IAsyncEnumerable(Of TDocument)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Collections.Generic.IAsyncEnumerable`1
+  commentId: T:System.Collections.Generic.IAsyncEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  name: IAsyncEnumerable<T>
+  nameWithType: IAsyncEnumerable<T>
+  fullName: System.Collections.Generic.IAsyncEnumerable<T>
+  nameWithType.vb: IAsyncEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IAsyncEnumerable(Of T)
+  name.vb: IAsyncEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.MaxRetryAttempts
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_MaxRetryAttempts
+  name: MaxRetryAttempts
+  nameWithType: BulkIndexOptions<TDocument>.MaxRetryAttempts
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.MaxRetryAttempts
+  nameWithType.vb: BulkIndexOptions(Of TDocument).MaxRetryAttempts
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).MaxRetryAttempts
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1.AllowRetryWithoutIdSelector
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html#CloudyWing_ElasticsearchDocumentKit_BulkIndexOptions_1_AllowRetryWithoutIdSelector
+  name: AllowRetryWithoutIdSelector
+  nameWithType: BulkIndexOptions<TDocument>.AllowRetryWithoutIdSelector
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>.AllowRetryWithoutIdSelector
+  nameWithType.vb: BulkIndexOptions(Of TDocument).AllowRetryWithoutIdSelector
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument).AllowRetryWithoutIdSelector
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit
+  definition: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  name: BulkIndexOptions<TDocument>
+  nameWithType: BulkIndexOptions<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>
+  nameWithType.vb: BulkIndexOptions(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument)
+  name.vb: BulkIndexOptions(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+    name: BulkIndexOptions
+    href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+    name: BulkIndexOptions
+    href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+  href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  name: BulkIndexOptions<TDocument>
+  nameWithType: BulkIndexOptions<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions<TDocument>
+  nameWithType.vb: BulkIndexOptions(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions(Of TDocument)
+  name.vb: BulkIndexOptions(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+    name: BulkIndexOptions
+    href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions`1
+    name: BulkIndexOptions
+    href: CloudyWing.ElasticsearchDocumentKit.BulkIndexOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1.Size
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1.Size
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html#CloudyWing_ElasticsearchDocumentKit_Search_DocumentSearchRequest_1_Size
+  name: Size
+  nameWithType: DocumentSearchRequest<TDocument>.Size
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest<TDocument>.Size
+  nameWithType.vb: DocumentSearchRequest(Of TDocument).Size
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest(Of TDocument).Size
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_SearchAsync_CloudyWing_ElasticsearchDocumentKit_Search_DocumentSearchRequest__0__System_Threading_CancellationToken_
+  name: SearchAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.SearchAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).SearchAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).SearchAsync
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit.Search
+  definition: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  name: DocumentSearchRequest<TDocument>
+  nameWithType: DocumentSearchRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest<TDocument>
+  nameWithType.vb: DocumentSearchRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest(Of TDocument)
+  name.vb: DocumentSearchRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+    name: DocumentSearchRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+    name: DocumentSearchRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult{{TDocument}}}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DocumentSearchResult<TDocument>>
+  nameWithType: Task<DocumentSearchResult<TDocument>>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult<TDocument>>
+  nameWithType.vb: Task(Of DocumentSearchResult(Of TDocument))
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult(Of TDocument))
+  name.vb: Task(Of DocumentSearchResult(Of TDocument))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+    name: DocumentSearchResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult`1
+    name: DocumentSearchResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  name: DocumentSearchRequest<TDocument>
+  nameWithType: DocumentSearchRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest<TDocument>
+  nameWithType.vb: DocumentSearchRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest(Of TDocument)
+  name.vb: DocumentSearchRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+    name: DocumentSearchRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest`1
+    name: DocumentSearchRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentSearchRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Search
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Search
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Search
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search
+    name: Search
+    href: CloudyWing.ElasticsearchDocumentKit.Search.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search
+    name: Search
+    href: CloudyWing.ElasticsearchDocumentKit.Search.html
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1.PageNumber
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1.PageNumber
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html#CloudyWing_ElasticsearchDocumentKit_Search_DocumentPageRequest_1_PageNumber
+  name: PageNumber
+  nameWithType: DocumentPageRequest<TDocument>.PageNumber
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest<TDocument>.PageNumber
+  nameWithType.vb: DocumentPageRequest(Of TDocument).PageNumber
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest(Of TDocument).PageNumber
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1.PageSize
+  commentId: P:CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1.PageSize
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html#CloudyWing_ElasticsearchDocumentKit_Search_DocumentPageRequest_1_PageSize
+  name: PageSize
+  nameWithType: DocumentPageRequest<TDocument>.PageSize
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest<TDocument>.PageSize
+  nameWithType.vb: DocumentPageRequest(Of TDocument).PageSize
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest(Of TDocument).PageSize
+- uid: System.Int32.MaxValue
+  commentId: F:System.Int32.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32.maxvalue
+  name: MaxValue
+  nameWithType: int.MaxValue
+  fullName: int.MaxValue
+  nameWithType.vb: Integer.MaxValue
+  fullName.vb: Integer.MaxValue
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+  isExternal: true
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_SearchAfterAsync_CloudyWing_ElasticsearchDocumentKit_Search_SearchAfterRequest__0__System_Threading_CancellationToken_
+  name: SearchAfterAsync(SearchAfterRequest<TDocument>, CancellationToken)
+  nameWithType: IElasticsearchDocumentStore<TDocument>.SearchAfterAsync(SearchAfterRequest<TDocument>, CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>, System.Threading.CancellationToken)
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).SearchAfterAsync(SearchAfterRequest(Of TDocument), CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument), System.Threading.CancellationToken)
+  name.vb: SearchAfterAsync(SearchAfterRequest(Of TDocument), CancellationToken)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+    name: SearchAfterAsync
+    href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_SearchAfterAsync_CloudyWing_ElasticsearchDocumentKit_Search_SearchAfterRequest__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync(CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0},System.Threading.CancellationToken)
+    name: SearchAfterAsync
+    href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_SearchAfterAsync_CloudyWing_ElasticsearchDocumentKit_Search_SearchAfterRequest__0__System_Threading_CancellationToken_
+  - name: (
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchPageAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchPageAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_SearchPageAsync_CloudyWing_ElasticsearchDocumentKit_Search_DocumentPageRequest__0__System_Threading_CancellationToken_
+  name: SearchPageAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.SearchPageAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchPageAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).SearchPageAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).SearchPageAsync
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit.Search
+  definition: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  name: DocumentPageRequest<TDocument>
+  nameWithType: DocumentPageRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest<TDocument>
+  nameWithType.vb: DocumentPageRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest(Of TDocument)
+  name.vb: DocumentPageRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+    name: DocumentPageRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+    name: DocumentPageRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult{{TDocument}}}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DocumentPageResult<TDocument>>
+  nameWithType: Task<DocumentPageResult<TDocument>>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult<TDocument>>
+  nameWithType.vb: Task(Of DocumentPageResult(Of TDocument))
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult(Of TDocument))
+  name.vb: Task(Of DocumentPageResult(Of TDocument))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+    name: DocumentPageResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult`1
+    name: DocumentPageResult
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  name: DocumentPageRequest<TDocument>
+  nameWithType: DocumentPageRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest<TDocument>
+  nameWithType.vb: DocumentPageRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest(Of TDocument)
+  name.vb: DocumentPageRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+    name: DocumentPageRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest`1
+    name: DocumentPageRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.DocumentPageRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore`1.SearchAfterAsync
+  href: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore-1.html#CloudyWing_ElasticsearchDocumentKit_IElasticsearchDocumentStore_1_SearchAfterAsync_CloudyWing_ElasticsearchDocumentKit_Search_SearchAfterRequest__0__System_Threading_CancellationToken_
+  name: SearchAfterAsync
+  nameWithType: IElasticsearchDocumentStore<TDocument>.SearchAfterAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore<TDocument>.SearchAfterAsync
+  nameWithType.vb: IElasticsearchDocumentStore(Of TDocument).SearchAfterAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.IElasticsearchDocumentStore(Of TDocument).SearchAfterAsync
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{{TDocument}}
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest{`0}
+  parent: CloudyWing.ElasticsearchDocumentKit.Search
+  definition: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  name: SearchAfterRequest<TDocument>
+  nameWithType: SearchAfterRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>
+  nameWithType.vb: SearchAfterRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument)
+  name.vb: SearchAfterRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage{{TDocument}}}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SearchAfterPage<TDocument>>
+  nameWithType: Task<SearchAfterPage<TDocument>>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage<TDocument>>
+  nameWithType.vb: Task(Of SearchAfterPage(Of TDocument))
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage(Of TDocument))
+  name.vb: Task(Of SearchAfterPage(Of TDocument))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+    name: SearchAfterPage
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage`1
+    name: SearchAfterPage
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterPage-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )
+  - name: )
+- uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+  href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  name: SearchAfterRequest<TDocument>
+  nameWithType: SearchAfterRequest<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest<TDocument>
+  nameWithType.vb: SearchAfterRequest(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest(Of TDocument)
+  name.vb: SearchAfterRequest(Of TDocument)
+  spec.csharp:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: <
+  - name: TDocument
+  - name: '>'
+  spec.vb:
+  - uid: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest`1
+    name: SearchAfterRequest
+    href: CloudyWing.ElasticsearchDocumentKit.Search.SearchAfterRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDocument
+  - name: )

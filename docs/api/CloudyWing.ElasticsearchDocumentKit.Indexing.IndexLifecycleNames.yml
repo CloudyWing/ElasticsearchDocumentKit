@@ -1,0 +1,441 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  id: IndexLifecycleNames
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix(System.String,System.DateTimeOffset,System.String)
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IndexLifecycleNames
+  nameWithType: IndexLifecycleNames
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  type: Class
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Indexing/IndexLifecycleNames.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IndexLifecycleNames
+    path: ../src/ElasticsearchDocumentKit/Indexing/IndexLifecycleNames.cs
+    startLine: 7
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Indexing
+  summary: 提供常見 index lifecycle 命名輔助方法。
+  example: []
+  syntax:
+    content: public static class IndexLifecycleNames
+    content.vb: Public Module IndexLifecycleNames
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix(System.String,System.DateTimeOffset,System.String)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix(System.String,System.DateTimeOffset,System.String)
+  id: WithDateSuffix(System.String,System.DateTimeOffset,System.String)
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  langs:
+  - csharp
+  - vb
+  name: WithDateSuffix(string, DateTimeOffset, string)
+  nameWithType: IndexLifecycleNames.WithDateSuffix(string, DateTimeOffset, string)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix(string, System.DateTimeOffset, string)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Indexing/IndexLifecycleNames.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: WithDateSuffix
+    path: ../src/ElasticsearchDocumentKit/Indexing/IndexLifecycleNames.cs
+    startLine: 18
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Indexing
+  summary: 建立含日期 suffix 的 index 名稱。
+  example: []
+  syntax:
+    content: public static string WithDateSuffix(string baseName, DateTimeOffset date, string format = "yyyyMMdd")
+    parameters:
+    - id: baseName
+      type: System.String
+      description: 基礎 index 名稱。
+    - id: date
+      type: System.DateTimeOffset
+      description: 日期。
+    - id: format
+      type: System.String
+      description: 日期格式。
+    return:
+      type: System.String
+      description: 含日期 suffix 的 index 名稱。
+    content.vb: Public Shared Function WithDateSuffix(baseName As String, [date] As DateTimeOffset, format As String = "yyyyMMdd") As String
+  overload: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">baseName</code> 或 <code class="paramref">format</code> 為空白字串。
+  nameWithType.vb: IndexLifecycleNames.WithDateSuffix(String, DateTimeOffset, String)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix(String, System.DateTimeOffset, String)
+  name.vb: WithDateSuffix(String, DateTimeOffset, String)
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix(System.String,System.String)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix(System.String,System.String)
+  id: WithVersionSuffix(System.String,System.String)
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames
+  langs:
+  - csharp
+  - vb
+  name: WithVersionSuffix(string, string)
+  nameWithType: IndexLifecycleNames.WithVersionSuffix(string, string)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Indexing/IndexLifecycleNames.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: WithVersionSuffix
+    path: ../src/ElasticsearchDocumentKit/Indexing/IndexLifecycleNames.cs
+    startLine: 44
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Indexing
+  summary: 建立含版本 suffix 的 index 名稱。
+  example: []
+  syntax:
+    content: public static string WithVersionSuffix(string baseName, string version)
+    parameters:
+    - id: baseName
+      type: System.String
+      description: 基礎 index 名稱。
+    - id: version
+      type: System.String
+      description: 版本識別。
+    return:
+      type: System.String
+      description: 含版本 suffix 的 index 名稱。
+    content.vb: Public Shared Function WithVersionSuffix(baseName As String, version As String) As String
+  overload: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">baseName</code> 或 <code class="paramref">version</code> 為空白字串。
+  nameWithType.vb: IndexLifecycleNames.WithVersionSuffix(String, String)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix(String, String)
+  name.vb: WithVersionSuffix(String, String)
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Indexing
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Indexing
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Indexing
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.html#CloudyWing_ElasticsearchDocumentKit_Indexing_IndexLifecycleNames_WithDateSuffix_System_String_System_DateTimeOffset_System_String_
+  name: WithDateSuffix
+  nameWithType: IndexLifecycleNames.WithDateSuffix
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithDateSuffix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.html#CloudyWing_ElasticsearchDocumentKit_Indexing_IndexLifecycleNames_WithVersionSuffix_System_String_System_String_
+  name: WithVersionSuffix
+  nameWithType: IndexLifecycleNames.WithVersionSuffix
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexLifecycleNames.WithVersionSuffix

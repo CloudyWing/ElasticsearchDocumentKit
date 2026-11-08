@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+  commentId: T:CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+  id: IIndexInitializer`1
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing
+  children:
+  - CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1.InitializeAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IIndexInitializer<TDocument>
+  nameWithType: IIndexInitializer<TDocument>
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer<TDocument>
+  type: Interface
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Indexing/IIndexInitializer.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: IIndexInitializer
+    path: ../src/ElasticsearchDocumentKit/Indexing/IIndexInitializer.cs
+    startLine: 6
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Indexing
+  summary: 顯式初始化指定文件型別的 Elasticsearch index。
+  example: []
+  syntax:
+    content: 'public interface IIndexInitializer<TDocument> where TDocument : class'
+    typeParameters:
+    - id: TDocument
+      description: 文件型別。
+    content.vb: Public Interface IIndexInitializer(Of TDocument As Class)
+  nameWithType.vb: IIndexInitializer(Of TDocument)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer(Of TDocument)
+  name.vb: IIndexInitializer(Of TDocument)
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1.InitializeAsync(System.Threading.CancellationToken)
+  commentId: M:CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1.InitializeAsync(System.Threading.CancellationToken)
+  id: InitializeAsync(System.Threading.CancellationToken)
+  parent: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync(CancellationToken)
+  nameWithType: IIndexInitializer<TDocument>.InitializeAsync(CancellationToken)
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer<TDocument>.InitializeAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/ElasticsearchDocumentKit/Indexing/IIndexInitializer.cs
+      branch: main
+      repo: https://github.com/CloudyWing/ElasticsearchDocumentKit.git
+    id: InitializeAsync
+    path: ../src/ElasticsearchDocumentKit/Indexing/IIndexInitializer.cs
+    startLine: 13
+  assemblies:
+  - CloudyWing.ElasticsearchDocumentKit
+  namespace: CloudyWing.ElasticsearchDocumentKit.Indexing
+  summary: 建立 index 與 mapping。
+  example: []
+  syntax:
+    content: Task<IndexInitializationResult> InitializeAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 取消權杖。
+    return:
+      type: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult}
+      description: index 初始化結果。
+    content.vb: Function InitializeAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IndexInitializationResult)
+  overload: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1.InitializeAsync*
+  nameWithType.vb: IIndexInitializer(Of TDocument).InitializeAsync(CancellationToken)
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer(Of TDocument).InitializeAsync(System.Threading.CancellationToken)
+references:
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+  commentId: N:CloudyWing.ElasticsearchDocumentKit.Indexing
+  href: CloudyWing.html
+  name: CloudyWing.ElasticsearchDocumentKit.Indexing
+  nameWithType: CloudyWing.ElasticsearchDocumentKit.Indexing
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing
+  spec.csharp:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html
+  spec.vb:
+  - uid: CloudyWing
+    name: CloudyWing
+    href: CloudyWing.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit
+    name: ElasticsearchDocumentKit
+    href: CloudyWing.ElasticsearchDocumentKit.html
+  - name: .
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing
+    name: Indexing
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.html
+- uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1.InitializeAsync*
+  commentId: Overload:CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer`1.InitializeAsync
+  href: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer-1.html#CloudyWing_ElasticsearchDocumentKit_Indexing_IIndexInitializer_1_InitializeAsync_System_Threading_CancellationToken_
+  name: InitializeAsync
+  nameWithType: IIndexInitializer<TDocument>.InitializeAsync
+  fullName: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer<TDocument>.InitializeAsync
+  nameWithType.vb: IIndexInitializer(Of TDocument).InitializeAsync
+  fullName.vb: CloudyWing.ElasticsearchDocumentKit.Indexing.IIndexInitializer(Of TDocument).InitializeAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult}
+  commentId: T:System.Threading.Tasks.Task{CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IndexInitializationResult>
+  nameWithType: Task<IndexInitializationResult>
+  fullName: System.Threading.Tasks.Task<CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult>
+  nameWithType.vb: Task(Of IndexInitializationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult)
+  name.vb: Task(Of IndexInitializationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+    name: IndexInitializationResult
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult
+    name: IndexInitializationResult
+    href: CloudyWing.ElasticsearchDocumentKit.Indexing.IndexInitializationResult.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
